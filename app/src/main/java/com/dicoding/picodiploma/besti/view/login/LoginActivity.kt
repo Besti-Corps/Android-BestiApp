@@ -10,15 +10,16 @@ import android.util.Patterns
 import android.view.View
 import android.widget.Toast
 import androidx.core.text.trimmedLength
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.picodiploma.besti.MainActivity
-import com.dicoding.picodiploma.besti.R
 import com.dicoding.picodiploma.besti.databinding.ActivityLoginBinding
+import com.dicoding.picodiploma.besti.dataclass.LoginResponse
 import com.dicoding.picodiploma.besti.view.signup.SignUpActivity
 
 class LoginActivity : AppCompatActivity() {
 
-    //private lateinit var loginViewModel: LoginViewModel
+    private lateinit var loginViewModel: LoginViewModel
     private lateinit var binding: ActivityLoginBinding
     //private lateinit var preferenceHelper: PreferenceHelper
 
@@ -31,24 +32,20 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
 
-        binding.loginButton.setOnClickListener{
-            startActivity(Intent(this, MainActivity::class.java))
-        }
-
         //preferenceHelper = PreferenceHelper(this)
 
-        //loginViewModel = ViewModelProvider(this,
-        //    ViewModelProvider.NewInstanceFactory()).get(LoginViewModel::class.java)
-/*
+        loginViewModel = ViewModelProvider(this,
+            ViewModelProvider.NewInstanceFactory()).get(LoginViewModel::class.java)
+
         loginViewModel.getLoginResponse().observe(this, Observer<LoginResponse> {
             if (it != null) {
                 Toast.makeText(applicationContext,
-                    "user ${it.loginResult.name} telah login",
+                    "user ${it.data.token} telah login",
                     Toast.LENGTH_LONG).show()
-                val tokenUser = ("Bearer " + it.loginResult.token)
-                Log.d("Failure", tokenUser)
+                //val tokenUser = (it.data.token)
+                //Log.d("Failure", tokenUser)
 
-                preferenceHelper.put(PREF_TOKEN, tokenUser)
+                //preferenceHelper.put(PREF_TOKEN, tokenUser)
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
@@ -76,12 +73,12 @@ class LoginActivity : AppCompatActivity() {
                 }
 
                 else -> {
-                    //loginViewModel.login(email, password)
+                    loginViewModel.login(email, password)
                     //preferenceHelper.put(STATE_KEY, true)
                 }
             }
         }
-        */
+
         playAnimation()
     }
 

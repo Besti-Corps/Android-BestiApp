@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dicoding.picodiploma.besti">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,16 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BesTi">
         <activity
-            android:name=".SettingActivity"
+            android:name=".view.setting.SettingActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".view.profile.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".CameraActivity"
+            android:name=".view.camera.CameraActivity"
             android:exported="false" />
         <activity
-            android:name=".SelectImageActivity"
+            android:name=".view.selectimage.SelectImageActivity"
             android:exported="false" />
         <activity
             android:name=".view.signup.SignUpActivity"
