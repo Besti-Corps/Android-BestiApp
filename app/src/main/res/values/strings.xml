@@ -20,11 +20,12 @@
     <string name="login">Masuk</string>
     <string name="daftar">Buat Akun Baru</string>
     <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
-    <string name="username">Username</string>
+    <string name="name">Name</string>
     <string name="signup">Daftar</string>
     <string name="phone">No. Hp</string>
     <string name="gender">Jenis Kelamin</string>
     <string name="profession">Profesi</string>
+    <string name="username">Username</string>
     <string name="Photo">Foto</string>
     <string name="Education">Edukasi</string>
     <string name="Selengkapnya">Selengkapnya</string>
@@ -48,4 +49,10 @@
     <string name="tv_help">Butuh Bantuan?</string>
     <string name="ganti_bahasa">Ganti Bahasa</string>
     <string name="ganti_tema">Ganti Tema</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="camera">Camera</string>
 </resources>

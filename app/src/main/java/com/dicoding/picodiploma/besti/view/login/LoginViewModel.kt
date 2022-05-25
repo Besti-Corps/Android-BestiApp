@@ -35,7 +35,6 @@ class LoginViewModel : ViewModel() {
                         val fail = response.body()
                         Log.e("message", fail?.status.toString())
                     }
-
                 }
 
                 override fun onFailure(call: Call<LoginResponse>, t: Throwable) {

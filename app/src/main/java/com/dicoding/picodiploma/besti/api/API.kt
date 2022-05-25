@@ -2,8 +2,6 @@ package com.dicoding.picodiploma.besti.api
 
 import com.dicoding.picodiploma.besti.dataclass.LoginResponse
 import com.dicoding.picodiploma.besti.dataclass.RegisterResponse
-import okhttp3.MultipartBody
-import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -15,7 +13,7 @@ interface API {
         @Field("name") name: String,
         @Field("profession") profession: String,
         @Field("gender") gender: String,
-        @Field("nohp") nohp: String,
+        @Field("phone") phone: String,
         @Field("email") email: String,
         @Field("password") password: String,
     ): Call<RegisterResponse>

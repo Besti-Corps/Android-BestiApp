@@ -5,16 +5,15 @@ import android.animation.ObjectAnimator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.util.Patterns
 import android.view.View
 import android.widget.Toast
 import androidx.core.text.trimmedLength
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.dicoding.picodiploma.besti.MainActivity
 import com.dicoding.picodiploma.besti.databinding.ActivityLoginBinding
 import com.dicoding.picodiploma.besti.dataclass.LoginResponse
+import com.dicoding.picodiploma.besti.view.home.HomeActivity
 import com.dicoding.picodiploma.besti.view.signup.SignUpActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -46,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
                 //Log.d("Failure", tokenUser)
 
                 //preferenceHelper.put(PREF_TOKEN, tokenUser)
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, HomeActivity::class.java))
                 finish()
             }
             if (it == null) {

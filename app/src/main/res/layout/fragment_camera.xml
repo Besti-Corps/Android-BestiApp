@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.camera.CameraActivity">
+    tools:context=".view.home.ui.camera.CameraFragment">
 
     <androidx.camera.view.PreviewView
         android:id="@+id/viewFinder"
@@ -30,5 +30,4 @@
         app:layout_constraintEnd_toEndOf="@+id/viewFinder"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_switch_camera" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
