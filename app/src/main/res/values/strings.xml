@@ -55,4 +55,68 @@
     <string name="title_notifications">Notifications</string>
     <string name="profile">Profile</string>
     <string name="camera">Camera</string>
+    <string name="judul_berita">Judul Berita</string>
+    <string name="deskripsi">Deskripsi</string>
+
+    <string-array name="data_judul_berita">
+        <item>Bikin Udara Tercemar, Pembakar Sampah di Jaksel Ditindak Sudin LH</item>
+        <item>Gokil! Warga Rancaekek Olah Popok Bekas Jadi Karya Cantik</item>
+        <item>Usai Disindir Gubernur, Sampah di Pekanbaru Hilang</item>
+        <item>TPA Cipayung Depok Overload, Kepala UPT Minta TPA Nambo Segera Dibuka</item>
+        <item>Duh, Sapi-sapi Ini Dibiarkan Makan di Tumpukan Sampah Saat PMK Mewabah</item>
+        <item>Pemkot Bekasi Cari Identitas Pria yang Marah Saat Ditegur Buang Sampah</item>
+        <item>TPA Sumur Batu Overload, Pemkot Bekasi Imbau Warga Tak Asal Buang Sampah</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Jakarta - Suku Dinas Lingkungan Hidup (LH) menindak pelaku usaha pengepul puing yang membakar sampah di Jl Kebagusan Raya, Kebagusan, Pasar Minggu, Jakarta Selatan. Dia ditindak karena menyebabkan pencemaran udara di lingkungan sekitarnya.
+        "Pembakaran sampah memang dilarang, apalagi ada perda yang mengatur kegiatan tersebut. Terlebih udara di sekitar lokasi jadi tercemar," ujar Kepala Sudin Lingkungan Hidup Jakarta Selatan M Amin dalam keterangannya, Rabu (25/5/2022).
+        Diketahui Seksi Peran Serta Masyarakat dan Penaatan Hukum Sudin Lingkungan Hidup Jakarta Selatan dan Dinas Lingkungan Hidup Jakarta, Bidang Penegakan Hukum, menemukan langsung kegiatan pembakaran sampah yang dilakukan Ahmad Ruslani pada 19 Mei lalu.Pelaku melanggar Pasal 130 ayat 1b Perda Nomor 3 Tahun 2013 tentang Pengelolaan Sampah.
+        Merujuk pada Perda Nomor 3 Tahun 2013 tentang Pengelolaan Sampah, pelaku usaha dikenakan sanksi administrasi, atau uang paksa pelanggar kebersihan sebesar Rp 500 ribu. Amin menyebut pelaku pembakaran sampah tersebut sudah membayar langsung ke Dinas Lingkungan Hidup DKI Jakarta.
+        "Karena melanggar dan ada payung hukumnya. Maka pelaku itu dikenakan uang paksa yang akan disetorkan ke dalam Pendapatan Denda atas Pelanggaran Peraturan Daerah. Yang bersangkutan juga sudah membayar disertai bukti pembayaran ke Dinas Lingkungan Hidup," katanya.
+        Dia berharap warga tidak lagi membakar sampah sembarangan. Sebab, asap dari pembakaran sampah mengakibatkan polusi udara. "Semoga bisa menjadi pembelajaran bagi sesama. Poin nya sayangi lingkungan dengan membuang sampah ditempat yang sudah disediakan," imbuhnya.
+        </item>
+        <item>Bandung - Permasalah sampah seolah menjadi hal sulit diatasi. Namun bagi pria asal Rancaekek, Pandi, sampah bisa dijadikan sesuatu karya yang lebih indah. Nih buktinya.
+        Di tangan pria asal Rancaekek, Kabupaten Bandung, Pandi Mulyana (38) sampah bisa dijadikan sesuatu karya yang lebih indah. Sampah yang digunakannya berkarya adalah berbahan dasar diapers atau popok sekali pakai, Selasa (24/5/2022).
+        </item>
+        <item>Pekanbaru - Gubernur Riau Syamsuar menyindir masalah sampah di Pekanbaru yang tak kunjung tuntas saat melantik Pejabat Wali Kota Pekanbaru, Muflihun, Senin kemarin. Setelah disindir gubernur, tumpukan sampah dalam kota langsung hilang.
+        Pantauan detikSumut, Selasa (24/5/2022), tumpukan sampah di jalanan Kota Pekanbaru dan Pasar Cik Puan mulai bersih. Sampah yang biasanya berserakan di jalan sudah tak terlihat lagi.
+        Khusus di Pasar Cik Puan, sampah yang sempat menggunung sudah mulai bersih. Petugas juga telah memasang terpal penghalang agar warga tak membuang sampah di sekitar bangunan pasar yang mangkrak itu. Di Jalan Tuanku Tambusai dan beberapa jalan protokol di Kota Pekanbaru, terlihat mobil angkutan sampah hilir mudik. Petugas kebersihan terlihat ikut mengiringi mobil mengangkut sampah.
+        "Ini kemarin udah diangkut semua. Tidak boleh lagi warga buang sampah di lokasi ini," kata seorang pedagang, Erna kepada detikSumut. Erna menyebut, sebelum diangkut sampah sempat menimbulkan bau dan dikomplain warga sekitar. Bau busuk, bahkan tercium saat warga melintas di Pasar Cik Puan.
+        "Kemarin itu bau busuk, belatung-belatung sampai ke warung kami. Banyak belatung karena tidak diangkut. Kadang diangkut, tapi lambat petugasnya. Warga juga komplain," imbuh Erna. Wanita paruh baya tersebut tidak tahu apakah sampah diangkut karena menjadi sorotan Gubernur Riau saat melantik Pj Wali Kota, Muflihun. Namun warga berharap persoalan sampah dapat diselesaikan oleh Muflihun sebagai pejabat baru.
+        "Berharap Wali Kota baru bisa menuntaskan masalah sampah. Kalau bisa Pasar Cik Puan ini juga bisa diselesaikan supaya tak jadi tempat orang buang sampah," katanya. Sebelumnya Gubernur Syamsuar melantik Pj Wali Kota Pekanbaru Muflihun dan Pj Bupati Kampar Kamsol, Senin kemarin. Saat pelantikan, Syamsuar minta Muflihun menuntaskan persoalan sampah di Pekanbaru.
+        Syamsuar menyampaikan sejumlah pekerjaan rumah yang tak tuntas oleh pejabat lama. Salah satunya terkait tunggakan tunjangan penghasilan pegawai (TPP) 12 bulan dan masalah sampah. "Pekanbaru menjadi prioritas dituntaskan penanganan banjir, sampah, jalan rusak, IPAL dan lampu penerangan jalan," ujar Syamsuar.
+        Selain itu, Syamsuar minta Muflihun turut menuntaskan masalah pasar kumuh dalam kota dan tunjangan pegawai yang nunggak selama 12 bulan. Termasuk gaji honor RT-RW agar dibayarkan selama 12 bulan.
+        </item>
+        <item>Depok - Sampah di Tempat Pembuangan Akhir (TPA) Cipayung, Depok, Jawa Barat, sudah melebihi kapasitas. Kepala UPT Cipayung meminta Pemprov Jawa Barat segera membuka TPPAS Lulut-Nambo. "Kita mendorong Provinsi agar Nambo segera membuka tempat pembuangan sampah (TPS)-nya," kata Kepala UPT Cipayung, Dadan Ardan Kurniawan, di Cipayung, Senin (23/5/2022).
+        Dadan mengatakan sampah di Kota Depok mencapai 1.100 ton dalam sehari. Ketinggian gunungan sampah di TPA Cipayung sudah mencapai 23 meter. "Ketinggian rata-rata 23 meter. Kapasitas atau daya tampung TPA Cipayung itu 1,3 juta kubik. Sekarang sudah mencapai 2,5 juta kubik," ujarnya.
+        TPA Cipayung memiliki tiga landfill atau lokasi pengoperasian. Dadan pesimis TPA Cipayung mampu untuk menampung sampah dalam beberapa bulan ke depan. "Sebenarnya kita sudah sangat riskan. Kita bilang sebulan lagi, dua bulan lagi, tiga bulan lagi. Mungkin satu bulan kita sudah pesimis gitu," ujar Ardan.
+        Selain menunggu TPPAS Lulut-Nambo dibuka, pihaknya berupaya memaksimalkan tempat hingga mengolah sampah dengan teknologi ramah lingkungan. "Kita di sini melakukan upaya penataan sampah-sampah yang masih bisa dipindahkan ke titik yang ketinggiannya masih belum maksimal. Merehab sarana dan prasarana TPA Cipayung, seperti nanti menormalkan lagi saluran, jalan operasi, dan lain sebagainya," kata Ardan.
+        Pihak TPA juga akan membangun fasilitas pengolahan sampah dengan teknologi ramah lingkungan. Pihaknya juga berencana menghabiskan sampah lama untuk diolah. "Mudah-mudahan di tahun 2024 dapat menyisakan sampah dengan radius 10 persen," ujarnya.
+        </item>
+        <item>Palu - Wabah Penyakit Mulut dan Kuku (PMK) sedang melanda ternak di daerah Indonesia. Kendati demikian, masih banyak ternak yang dibiarkan bebas mencari makan di TPA. Sapi mencari makan di Tempat Pembuangan Akhir Sampah (TPA) Kawatuna, Kota Palu, Sulawesi Tengah, Minggu (22/5/2022).
+        </item>
+        <item>Bekasi - Dinas Lingkungan Hidup (LH) Kota Bekasi mencari pria yang marah karena ditegur membuang sampah sembarangan. Pria tersebut sempat viral di media sosial karena perbuatannya. "Kami sudah memerintahkan kepada Kepala UPTD Rawalumbu supaya melihat langsung ke lokasi. Kalau ada si (pria) yang buang sampah itu, Bapak yang ngamuk, ditegur. Kami coba cari identitasnya," ujar Kepala Dinas LH Kota Bekasi Yayan Yuliana kepada detikcom pada Sabtu (21/5/2022).
+        Yayan mengatakan pihaknya akan memberikan pemahaman kepada pria tersebut soal tindakannya yang salah karena membuang sampah sembarangan. "Kemudian menemui orangnya, ya kita akan mengasih pemahaman, karena tindakan mereka yang salah," tuturnya. Sebelumnya, viral video merekam pria marah-marah setelah ditegur untuk tidak membuang sampah sembarangan. Peristiwa tersebut terjadi di Rawalumbu, Kota Bekasi.
+        "Ini video diambil 5 Mei 2022, berawal kami menegur dengan baik terhadap bapak di video ini, dikarenakan membuang sampah berkarung dan plastik dengan jumlah banyak," ucap akun TikTok @orieyancelia, seperti dilihat detikcom dalam video tersebut. "Bapak dan ibu ini membuang sampah bukan pada tempat pembuangan sampah (TPS/TPA), melainkan di lahan ruko perumahan. Tapi tanggapan bapak ini berbicara dengan tidak sopan," sambung si perekam.
+        Menyikapi video viral tersebut, Yayan mengapresiasi perekam video yang telah mengingatkan warga lainnya untuk tidak membuang sampah sembarangan. Yayan pun mengatakan viralnya video tersebut menambah kesadaran masyarakat untuk tidak membuang sampah sembarangan.
+        </item>
+        <item>Bekasi - Kepala Dinas Lingkungan Hidup (LH) Kota Bekasi Yayan Yuliana mengatakan Tempat Pembuangan Akhir (TPA) Sampah Sumur Batu sudah overload. TPA itu hanya bisa menampung 70 persen dari total sampah yang dihasilkan warga Bekasi tiap harinya.
+        "Satu hari memproduksi sampah warga masyarakat itu kurang lebih 1.800 ton, sementara yang bisa diangkut ke TPA Sumur Batu itu cuma 70 persen. Jadi nggak bisa 100 persen produksi sampah masyarakat Kota Bekasi diangkut ke TPA," ucap Yayan kepada wartawan, Sabtu (21/5/2022).
+        Yayan mengatakan truk pengangkut sampah yang dimiliki oleh Pemkot juga terbatas. Menurut Yayan, 30 persen sampah yang tidak terangkut itu memunculkan tempat pembuangan sampah (TPS) liar. "Kondisi TPA kita juga yang overload dan tidak bisa terangkut semua karena armada kita terbatas. Sisanya 30 persen itu masih ada orang yang buang sembarangan, di tempat yang misalnya tidak diperbolehkan, sehingga muncul TPS-TPS liar," tuturnya.
+        Yayan menyebut pihaknya berupaya menambah luas TPA setiap tahun. Tapi, kata dia, upaya itu percuma jika warga cuma bergantung pada TPA. "Kalau penambahan luasan TPA setiap tahun kita upayakan, cuma karena keterbatasan juga untuk menambah luasan TPA. Tapi yang lebih terpenting lagi itu kita untuk pengelolaan sampah tidak bisa mengandalkan TPA. Justru kita mengharapkan tumbuh dari masyarakat itu bijak mengelola sampah," ujarnya
+        "Makanya kita dorong kepada masyarakat untuk pengurangan sampah, seperti memilah sampah, kemudian memisahkan barang-barang bernilai ekonomis. Kita berharap yang 30 persen itu bisa dikurangi ya di hulu gitu, bukan di hilir di TPA. Pengurangan hulu ini yang kita dorong ke masyarakat," sambungnya. Dia juga menyebut Pemkot Bekasi mewajibkan pengelola pusat perbelanjaan dan perkantoran memilah sampah. Namun belum adanya sanksi membuat pemilahan sampah tak maksimal.
+        "Bahkan kita di mal-mal, kompleks perkantoran, kompleks bisnis, di amdal yang kita keluarkan itu dia harus mewajibkan mengelola sampah sendiri, tidak dibuang ke TPA. Nah, kita sampai saat ini masih merumuskan (sanksi) ya," ujarnya.
+        </item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/s_pembakar_sampah</item>
+        <item>@drawable/s_popok_bekas</item>
+        <item>@drawable/s_sampah_pekanbaru</item>
+        <item>@drawable/s_tpa_depok_overload</item>
+        <item>@drawable/s_sapi_makan_sampah</item>
+        <item>@drawable/s_pria_marah</item>
+        <item>@drawable/s_tpa_sumurbatu_overload</item>
+    </integer-array>
 </resources>

@@ -82,6 +82,8 @@ dependencies {
     kapt 'androidx.room:room-compiler:2.5.0-alpha01'
     implementation 'androidx.room:room-paging:2.5.0-alpha01'
 
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
     //mockito
     testImplementation 'org.mockito:mockito-core:3.12.4'
     testImplementation 'org.mockito:mockito-inline:3.12.4'

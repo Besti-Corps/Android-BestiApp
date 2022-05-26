@@ -17,7 +17,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp">
+            android:padding="6dp">
 
             <ImageView
                 android:id="@+id/iv_user"
@@ -30,7 +30,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:contentDescription="@string/Photo"
-                android:src="@drawable/logo_besti" />
+                android:src="@drawable/avatar" />
 
             <TextView
                 android:id="@+id/tv_username"
@@ -85,89 +85,15 @@
         android:layout_marginEnd="16dp"
         android:text="@string/Selengkapnya" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_view1"
-        app:cardCornerRadius="4dp"
-        app:layout_constraintTop_toBottomOf="@id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        tools:layout_editor_absoluteX="8dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_heroes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        tools:listitem="@layout/item_berita"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp">
-
-            <ImageView
-                android:id="@+id/iv_user1"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="8dp"
-                android:contentDescription="@string/Photo"
-                android:src="@drawable/logo_judul_rmv" />
-
-            <TextView
-                android:id="@+id/tv_deskripsi"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_toEndOf="@id/iv_user1"
-                android:text="Bikin Mampet, Sampah di Kali Cipamingkis Bekasi Akhirnya Diangkut Juga"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_view2"
-        app:cardCornerRadius="4dp"
-        app:layout_constraintTop_toBottomOf="@id/card_view1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        tools:layout_editor_absoluteX="8dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp">
-
-            <ImageView
-                android:id="@+id/iv_user2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi1"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="8dp"
-                android:contentDescription="@string/Photo"
-                android:src="@drawable/logo_judul_rmv" />
-
-            <TextView
-                android:id="@+id/tv_deskripsi1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_toEndOf="@id/iv_user2"
-                android:text="Duh Jorok, Sampah Berceceran di JPO Kampung Rambutan"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
