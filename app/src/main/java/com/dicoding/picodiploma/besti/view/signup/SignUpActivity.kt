@@ -3,11 +3,11 @@ package com.dicoding.picodiploma.besti.view.signup
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.trimmedLength
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -25,16 +25,22 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val actionbar = supportActionBar
+        actionbar!!.hide()
 
-        signUpViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(SignUpViewModel::class.java)
+        signUpViewModel = ViewModelProvider(
+            this,
+            ViewModelProvider.NewInstanceFactory()
+        )[SignUpViewModel::class.java]
 
-        signUpViewModel.getRegisterResponse().observe(this, Observer <RegisterResponse>{
-            if(it != null){
+        signUpViewModel.getRegisterResponse().observe(this, Observer<RegisterResponse> {
+            if (it != null) {
                 Toast.makeText(applicationContext, it.status, Toast.LENGTH_LONG).show()
                 startActivity(Intent(this, LoginActivity::class.java))
             }
-            if(it == null){
-                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG).show()
+            if (it == null) {
+                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG)
+                    .show()
             }
         })
 
@@ -55,7 +61,7 @@ class SignUpActivity : AppCompatActivity() {
                 gender.isEmpty() -> {
                     binding.genderEditTextLayout.error = "Masukkan email"
                 }
-                phone!!.isEmpty() -> {
+                phone.isEmpty() -> {
                     binding.phoneEditTextLayout.error = "Masukkan email"
                 }
                 email.isEmpty() -> {
@@ -86,18 +92,31 @@ class SignUpActivity : AppCompatActivity() {
         }.start()
 
         val title = ObjectAnimator.ofFloat(binding.titleTextView, View.ALPHA, 1f).setDuration(200)
-        val nameTextView = ObjectAnimator.ofFloat(binding.nameTextView, View.ALPHA, 1f).setDuration(200)
-        val nameEditTextLayout = ObjectAnimator.ofFloat(binding.nameEditTextLayout, View.ALPHA, 1f).setDuration(200)
-        val professionTextView = ObjectAnimator.ofFloat(binding.professionTextView, View.ALPHA, 1f).setDuration(200)
-        val professionEditTextLayout = ObjectAnimator.ofFloat(binding.professionEditTextLayout, View.ALPHA, 1f).setDuration(200)
-        val genderTextView = ObjectAnimator.ofFloat(binding.genderTextView, View.ALPHA, 1f).setDuration(200)
-        val genderEditTextLayout = ObjectAnimator.ofFloat(binding.genderEditTextLayout, View.ALPHA, 1f).setDuration(200)
-        val phoneTextView = ObjectAnimator.ofFloat(binding.phoneTextView, View.ALPHA, 1f).setDuration(200)
-        val phoneEditTextLayout = ObjectAnimator.ofFloat(binding.phoneEditTextLayout, View.ALPHA, 1f).setDuration(200)
-        val emailTextView = ObjectAnimator.ofFloat(binding.emailTextView, View.ALPHA, 1f).setDuration(200)
-        val emailEditTextLayout = ObjectAnimator.ofFloat(binding.emailEditTextLayout, View.ALPHA, 1f).setDuration(200)
-        val passwordTextView = ObjectAnimator.ofFloat(binding.passwordTextView, View.ALPHA, 1f).setDuration(200)
-        val passwordEditTextLayout = ObjectAnimator.ofFloat(binding.passwordEditTextLayout, View.ALPHA, 1f).setDuration(200)
+        val nameTextView =
+            ObjectAnimator.ofFloat(binding.nameTextView, View.ALPHA, 1f).setDuration(200)
+        val nameEditTextLayout =
+            ObjectAnimator.ofFloat(binding.nameEditTextLayout, View.ALPHA, 1f).setDuration(200)
+        val professionTextView =
+            ObjectAnimator.ofFloat(binding.professionTextView, View.ALPHA, 1f).setDuration(200)
+        val professionEditTextLayout =
+            ObjectAnimator.ofFloat(binding.professionEditTextLayout, View.ALPHA, 1f)
+                .setDuration(200)
+        val genderTextView =
+            ObjectAnimator.ofFloat(binding.genderTextView, View.ALPHA, 1f).setDuration(200)
+        val genderEditTextLayout =
+            ObjectAnimator.ofFloat(binding.genderEditTextLayout, View.ALPHA, 1f).setDuration(200)
+        val phoneTextView =
+            ObjectAnimator.ofFloat(binding.phoneTextView, View.ALPHA, 1f).setDuration(200)
+        val phoneEditTextLayout =
+            ObjectAnimator.ofFloat(binding.phoneEditTextLayout, View.ALPHA, 1f).setDuration(200)
+        val emailTextView =
+            ObjectAnimator.ofFloat(binding.emailTextView, View.ALPHA, 1f).setDuration(200)
+        val emailEditTextLayout =
+            ObjectAnimator.ofFloat(binding.emailEditTextLayout, View.ALPHA, 1f).setDuration(200)
+        val passwordTextView =
+            ObjectAnimator.ofFloat(binding.passwordTextView, View.ALPHA, 1f).setDuration(200)
+        val passwordEditTextLayout =
+            ObjectAnimator.ofFloat(binding.passwordEditTextLayout, View.ALPHA, 1f).setDuration(200)
         val signup = ObjectAnimator.ofFloat(binding.signupButton, View.ALPHA, 1f).setDuration(200)
 
 
