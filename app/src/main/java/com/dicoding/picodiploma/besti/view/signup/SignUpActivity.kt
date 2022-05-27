@@ -25,8 +25,6 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val actionbar =supportActionBar
-        actionbar!!.hide()
 
         signUpViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(SignUpViewModel::class.java)
 
@@ -36,7 +34,7 @@ class SignUpActivity : AppCompatActivity() {
                 startActivity(Intent(this, LoginActivity::class.java))
             }
             if(it == null){
-                Toast.makeText(applicationContext, "Gagal Membuat Akun", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG).show()
             }
         })
 
@@ -57,7 +55,7 @@ class SignUpActivity : AppCompatActivity() {
                 gender.isEmpty() -> {
                     binding.genderEditTextLayout.error = "Masukkan email"
                 }
-                phone.isEmpty() -> {
+                phone!!.isEmpty() -> {
                     binding.phoneEditTextLayout.error = "Masukkan email"
                 }
                 email.isEmpty() -> {
