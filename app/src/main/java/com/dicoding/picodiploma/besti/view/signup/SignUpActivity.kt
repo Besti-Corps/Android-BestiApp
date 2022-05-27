@@ -25,6 +25,8 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val actionbar =supportActionBar
+        actionbar!!.hide()
 
         signUpViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(SignUpViewModel::class.java)
 
