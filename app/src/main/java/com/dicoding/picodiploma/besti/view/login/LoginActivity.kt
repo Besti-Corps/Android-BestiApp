@@ -27,6 +27,9 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val actionbar =supportActionBar
+        actionbar!!.hide()
+
         binding.daftardulu.setOnClickListener{
             startActivity(Intent(this, SignUpActivity::class.java))
         }
@@ -39,10 +42,8 @@ class LoginActivity : AppCompatActivity() {
         loginViewModel.getLoginResponse().observe(this, Observer<LoginResponse> {
             if (it != null) {
                 Toast.makeText(applicationContext,
-                    "user ${it.data.token} telah login",
+                    "Kamu Berhasil Login",
                     Toast.LENGTH_LONG).show()
-                //val tokenUser = (it.data.token)
-                //Log.d("Failure", tokenUser)
 
                 //preferenceHelper.put(PREF_TOKEN, tokenUser)
                 startActivity(Intent(this, HomeActivity::class.java))

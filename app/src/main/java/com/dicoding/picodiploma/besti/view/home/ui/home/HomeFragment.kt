@@ -27,13 +27,8 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-
-        //val homeViewModel =
-        //    ViewModelProvider(this).get(HomeViewModel::class.java)
-
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         return root
     }
 
@@ -59,8 +54,8 @@ class HomeFragment : Fragment() {
             val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
             val listHero = ArrayList<Berita>()
             for (i in dataName.indices) {
-                val hero = Berita(dataName[i],dataDescription[i], dataPhoto.getResourceId(i, -1))
-                listHero.add(hero)
+                val berita = Berita(dataName[i],dataDescription[i], dataPhoto.getResourceId(i, -1))
+                listHero.add(berita)
             }
             return listHero
         }
@@ -81,7 +76,7 @@ class HomeFragment : Fragment() {
         })
     }
 
-    private fun showSelectedHero(hero: Berita) {
-        Toast.makeText(requireActivity(), "Kamu memilih " + hero.name, Toast.LENGTH_SHORT).show()
+    private fun showSelectedHero(berita: Berita) {
+        Toast.makeText(requireActivity(), "Kamu memilih " + berita.name, Toast.LENGTH_SHORT).show()
     }
 }
