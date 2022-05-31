@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_camera"
-        android:name="com.dicoding.picodiploma.besti.view.home.ui.camera.CameraFragment"
+        android:name="com.dicoding.picodiploma.besti.view.home.ui.selectImage.SelectImageFragment"
         android:label="@string/camera"
         tools:layout="@layout/fragment_camera" />
 

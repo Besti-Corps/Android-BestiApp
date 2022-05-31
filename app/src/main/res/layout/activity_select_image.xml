@@ -4,42 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.selectimage.SelectImageActivity">
+    tools:context=".view.camera.CameraActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <ImageView
-        android:id="@+id/previewImageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/rect2"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatImageButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_place_holder" />
-
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/appCompatImageButton"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/rect"
-        android:src="@drawable/ic_camera"
-        android:tint="@color/white"
+        android:id="@+id/captureImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_capture" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <ImageView
+        android:id="@+id/switchCamera"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="64dp"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/ic_next"
-        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageButton"
-        app:layout_constraintStart_toEndOf="@+id/appCompatImageButton"
-        app:layout_constraintTop_toTopOf="@+id/appCompatImageButton"
-        app:layout_constraintVertical_bias="0.525" />
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewFinder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_switch_camera" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

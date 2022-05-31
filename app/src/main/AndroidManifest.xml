@@ -3,6 +3,13 @@
     package="com.dicoding.picodiploma.besti">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -20,13 +27,7 @@
             android:name=".view.setting.SettingActivity"
             android:exported="false" />
         <activity
-            android:name=".view.profile.ProfileActivity"
-            android:exported="false" />
-        <activity
             android:name=".view.camera.CameraActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.selectimage.SelectImageActivity"
             android:exported="false" />
         <activity
             android:name=".view.signup.SignUpActivity"
@@ -36,9 +37,6 @@
             android:exported="false" />
         <activity
             android:name=".IntroActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
