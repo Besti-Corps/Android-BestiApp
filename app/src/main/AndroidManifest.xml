@@ -20,6 +20,9 @@
         android:theme="@style/Theme.BesTi"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".view.home.ui.detail.DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.home.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home" />

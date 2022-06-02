@@ -51,10 +51,11 @@ class HomeFragment : Fragment() {
         get() {
             val dataName = resources.getStringArray(R.array.data_judul_berita)
             val dataDescription = resources.getStringArray(R.array.data_description)
+            val dataPhotoVector = resources.obtainTypedArray(R.array.data_photo_vector)
             val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
             val listHero = ArrayList<Berita>()
             for (i in dataName.indices) {
-                val berita = Berita(dataName[i],dataDescription[i], dataPhoto.getResourceId(i, -1))
+                val berita = Berita(dataName[i],dataDescription[i], dataPhotoVector.getResourceId(i, -1), dataPhoto.getResourceId(i, -1))
                 listHero.add(berita)
             }
             return listHero
@@ -78,5 +79,6 @@ class HomeFragment : Fragment() {
 
     private fun showSelectedHero(berita: Berita) {
         Toast.makeText(requireActivity(), "Kamu memilih " + berita.name, Toast.LENGTH_SHORT).show()
+
     }
 }
