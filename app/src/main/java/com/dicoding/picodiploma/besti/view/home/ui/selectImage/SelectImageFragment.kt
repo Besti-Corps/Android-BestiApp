@@ -7,14 +7,24 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.dicoding.picodiploma.besti.api.Retrofit
 import com.dicoding.picodiploma.besti.databinding.FragmentSelectImageBinding
+import com.dicoding.picodiploma.besti.dataclass.PredictionResponse
+import com.dicoding.picodiploma.besti.reduceFileImage
 import com.dicoding.picodiploma.besti.rotateBitmap
 import com.dicoding.picodiploma.besti.view.result.ResultActivity
 import com.dicoding.picodiploma.besti.view.camera.CameraActivity
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody.Companion.asRequestBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.io.File
 
 class SelectImageFragment : Fragment() {
@@ -72,7 +82,40 @@ class SelectImageFragment : Fragment() {
     }
 
     private fun uploadImage() {
-        TODO("Not yet implemented")
+        if (getFile != null) {
+            val file = reduceFileImage(getFile as File)
+
+            val requestImageFile = file.asRequestBody("image/jpeg".toMediaTypeOrNull())
+            val imageMultipart: MultipartBody.Part = MultipartBody.Part.createFormData(
+                "image",
+                file.name,
+                requestImageFile
+            )
+
+            val service = Retrofit.apiService.predict(imageMultipart)
+
+            service.enqueue(object : Callback<PredictionResponse> {
+                override fun onResponse(
+                    call: Call<PredictionResponse>,
+                    response: Response<PredictionResponse>
+                ) {
+                    if (response.isSuccessful) {
+                        val responseBody = response.body()
+                        if (responseBody != null ) {
+                            Toast.makeText(activity, responseBody.status, Toast.LENGTH_SHORT).show()
+                            startActivity(Intent(activity, ResultActivity::class.java))
+                        }
+                    } else {
+                        Toast.makeText(activity, response.message(), Toast.LENGTH_SHORT).show()
+                    }
+                }
+                override fun onFailure(call: Call<PredictionResponse>, t: Throwable) {
+                    Toast.makeText(activity, "Gagal instance Retrofit", Toast.LENGTH_SHORT).show()
+                }
+            })
+        } else {
+            Toast.makeText(activity, "Silakan masukkan berkas gambar terlebih dahulu.", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun startCameraX() {
@@ -84,7 +127,7 @@ class SelectImageFragment : Fragment() {
         ActivityResultContracts.StartActivityForResult()
     ) {
         if (it.resultCode == CAMERA_X_RESULT) {
-            val myFile = it.data?.getSerializableExtra("picture") as File
+            val myFile = it.data?.getSerializableExtra("image") as File
             val isBackCamera = it.data?.getBooleanExtra("isBackCamera", true) as Boolean
 
             getFile = myFile
