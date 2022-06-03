@@ -14,13 +14,13 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import com.dicoding.picodiploma.besti.createFile
-import com.dicoding.picodiploma.besti.databinding.ActivitySelectImageBinding
+import com.dicoding.picodiploma.besti.databinding.ActivityCameraBinding
 import com.dicoding.picodiploma.besti.view.home.ui.selectImage.SelectImageFragment
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
 class CameraActivity : AppCompatActivity() {
-    private lateinit var binding: ActivitySelectImageBinding
+    private lateinit var binding: ActivityCameraBinding
     private lateinit var cameraExecutor: ExecutorService
 
     private var cameraSelector: CameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
@@ -29,7 +29,7 @@ class CameraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivitySelectImageBinding.inflate(layoutInflater)
+        binding = ActivityCameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         cameraExecutor = Executors.newSingleThreadExecutor()

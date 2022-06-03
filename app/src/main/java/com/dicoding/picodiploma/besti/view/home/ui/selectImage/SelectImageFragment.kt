@@ -2,6 +2,7 @@ package com.dicoding.picodiploma.besti.view.home.ui.selectImage
 
 import android.Manifest
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,14 +11,15 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.dicoding.picodiploma.besti.databinding.FragmentCameraBinding
+import com.dicoding.picodiploma.besti.databinding.FragmentSelectImageBinding
+import com.dicoding.picodiploma.besti.rotateBitmap
 import com.dicoding.picodiploma.besti.view.result.ResultActivity
 import com.dicoding.picodiploma.besti.view.camera.CameraActivity
 import java.io.File
 
 class SelectImageFragment : Fragment() {
 
-    private var _binding: FragmentCameraBinding? = null
+    private var _binding: FragmentSelectImageBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -41,10 +43,6 @@ class SelectImageFragment : Fragment() {
             for(b in result.values) {
                 allAreGranted = allAreGranted && b
             }
-
-            if(allAreGranted) {
-
-            }
         }
 
 
@@ -53,10 +51,10 @@ class SelectImageFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-        val dashboardViewModel =
+        val selectImageViewModel =
             ViewModelProvider(this).get(SelectImageViewModel::class.java)
 
-        _binding = FragmentCameraBinding.inflate(inflater, container, false)
+        _binding = FragmentSelectImageBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         _binding!!.captureImage.setOnClickListener {
@@ -66,15 +64,37 @@ class SelectImageFragment : Fragment() {
                 Manifest.permission.CAMERA
             )
             activityResultLauncher.launch(appPerms)
-            val intent = Intent (activity, CameraActivity::class.java)
-            activity?.startActivity(intent)
+            startCameraX()
         }
 
-        _binding!!.next.setOnClickListener {
-            val intent = Intent(activity, ResultActivity::class.java)
-            activity?.startActivity(intent)
-        }
+        _binding!!.next.setOnClickListener {uploadImage()}
         return root
+    }
+
+    private fun uploadImage() {
+        TODO("Not yet implemented")
+    }
+
+    private fun startCameraX() {
+        val intent = Intent(activity, CameraActivity::class.java)
+        launcherIntentCameraX.launch(intent)
+    }
+
+    private val launcherIntentCameraX = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) {
+        if (it.resultCode == CAMERA_X_RESULT) {
+            val myFile = it.data?.getSerializableExtra("picture") as File
+            val isBackCamera = it.data?.getBooleanExtra("isBackCamera", true) as Boolean
+
+            getFile = myFile
+            val result = rotateBitmap(
+                BitmapFactory.decodeFile(myFile.path),
+                isBackCamera
+            )
+
+            _binding?.previewImageView?.setImageBitmap(result)
+        }
     }
 
     override fun onDestroyView() {

@@ -1,7 +1,10 @@
 package com.dicoding.picodiploma.besti.api
 
 import com.dicoding.picodiploma.besti.dataclass.LoginResponse
+import com.dicoding.picodiploma.besti.dataclass.PredictionResponse
 import com.dicoding.picodiploma.besti.dataclass.RegisterResponse
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -24,5 +27,11 @@ interface API {
         @Field("email") email: String,
         @Field("password") password: String
     ): Call<LoginResponse>
+
+    @Multipart
+    @POST("predict")
+    fun predict(
+        @Part file: MultipartBody.Part
+    ): Call<PredictionResponse>
 
 }
