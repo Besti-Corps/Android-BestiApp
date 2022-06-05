@@ -9,15 +9,14 @@ data class PredictionResponse(
     @SerializedName("type")
     val type: String,
     @SerializedName("predict")
-    val predict: dataPredict
-
+    val predict: ArrayList<dataPredict>
 )
 
 data class dataPredict(
     @SerializedName("label")
     val label: String,
     @SerializedName("accuracy")
-    val accuracy: Int32Value
+    val accuracy: Int
 )
 
 

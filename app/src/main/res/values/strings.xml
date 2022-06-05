@@ -57,6 +57,7 @@
     <string name="camera">Camera</string>
     <string name="judul_berita">Judul Berita</string>
     <string name="deskripsi">Deskripsi</string>
+    <string name="save">Simpan</string>
 
     <string-array name="data_judul_berita">
         <item>Bikin Udara Tercemar, Pembakar Sampah di Jaksel Ditindak Sudin LH</item>

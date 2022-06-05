@@ -11,6 +11,9 @@ import android.widget.Toast
 import androidx.core.text.trimmedLength
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.dicoding.picodiploma.besti.PreferenceHelper
+import com.dicoding.picodiploma.besti.PreferenceHelper.Companion.PREF_TOKEN
+import com.dicoding.picodiploma.besti.PreferenceHelper.Companion.STATE_KEY
 import com.dicoding.picodiploma.besti.databinding.ActivityLoginBinding
 import com.dicoding.picodiploma.besti.dataclass.LoginResponse
 import com.dicoding.picodiploma.besti.view.home.HomeActivity
@@ -20,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var loginViewModel: LoginViewModel
     private lateinit var binding: ActivityLoginBinding
-    //private lateinit var preferenceHelper: PreferenceHelper
+    private lateinit var preferenceHelper: PreferenceHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
 
-        //preferenceHelper = PreferenceHelper(this)
+        preferenceHelper = PreferenceHelper(this)
 
         loginViewModel = ViewModelProvider(this,
             ViewModelProvider.NewInstanceFactory()).get(LoginViewModel::class.java)
@@ -44,8 +47,9 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext,
                     "kamu telah login",
                     Toast.LENGTH_LONG).show()
+                val tokenUser = (it.data.token)
 
-                //preferenceHelper.put(PREF_TOKEN, tokenUser)
+                preferenceHelper.put(PREF_TOKEN, tokenUser)
                 startActivity(Intent(this, HomeActivity::class.java))
                 finish()
             }
@@ -74,12 +78,20 @@ class LoginActivity : AppCompatActivity() {
 
                 else -> {
                     loginViewModel.login(email, password)
-                    //preferenceHelper.put(STATE_KEY, true)
+                    preferenceHelper.put(STATE_KEY, true)
                 }
             }
         }
 
         playAnimation()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (preferenceHelper.getBoolean(PreferenceHelper.STATE_KEY)) {
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
+        }
     }
 
     private fun playAnimation() {

@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,10 +12,14 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.picodiploma.besti.api.Retrofit
 import com.dicoding.picodiploma.besti.databinding.FragmentSelectImageBinding
 import com.dicoding.picodiploma.besti.dataclass.PredictionResponse
+import com.dicoding.picodiploma.besti.dataclass.dataPredict
 import com.dicoding.picodiploma.besti.reduceFileImage
 import com.dicoding.picodiploma.besti.rotateBitmap
 import com.dicoding.picodiploma.besti.view.result.ResultActivity
@@ -92,6 +97,18 @@ class SelectImageFragment : Fragment() {
                 requestImageFile
             )
 
+            val predictImage = MutableLiveData<ArrayList<dataPredict>>()
+
+            fun getPredict(): LiveData<ArrayList<dataPredict>> {
+                return  predictImage
+            }
+
+            getPredict().observe(viewLifecycleOwner, Observer<ArrayList<dataPredict>> {
+                if (it != null) {
+                    startActivity(Intent(activity, ResultActivity::class.java))
+                }
+            })
+
             val service = Retrofit.apiService.predict(imageMultipart)
 
             service.enqueue(object : Callback<PredictionResponse> {
@@ -110,6 +127,7 @@ class SelectImageFragment : Fragment() {
                     }
                 }
                 override fun onFailure(call: Call<PredictionResponse>, t: Throwable) {
+                    Log.e("Failure", t.message.toString())
                     Toast.makeText(activity, "Gagal instance Retrofit", Toast.LENGTH_SHORT).show()
                 }
             })

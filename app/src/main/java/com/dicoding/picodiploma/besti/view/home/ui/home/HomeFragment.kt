@@ -5,19 +5,26 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.dicoding.picodiploma.besti.PreferenceHelper
 import com.dicoding.picodiploma.besti.R
 import com.dicoding.picodiploma.besti.databinding.FragmentHomeBinding
+import com.dicoding.picodiploma.besti.dataclass.InfoResponse
 import java.util.ArrayList
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
+    private val homeViewModel: HomeViewModel by viewModels()
+    private lateinit var preferenceHelper: PreferenceHelper
 
     private lateinit var rvHeroes: RecyclerView
     private val list = ArrayList<Berita>()
@@ -29,6 +36,24 @@ class HomeFragment : Fragment() {
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        preferenceHelper = PreferenceHelper(requireContext())
+
+        homeViewModel.setInfo(preferenceHelper.getString(PreferenceHelper.PREF_TOKEN).toString())
+
+        homeViewModel.getInfoResponse().observe(viewLifecycleOwner, Observer <InfoResponse>{
+            if(it != null){
+                Toast.makeText(context, it.status, Toast.LENGTH_LONG).show()
+                var tvName: TextView = requireActivity().findViewById(R.id.tv_username)
+                var tvId: TextView = requireActivity().findViewById(R.id.tv_description)
+                tvName.text = "Nama : " + it.data.name
+                tvId.text = "ID : " + it.data.id.toString()
+            }
+            if(it == null){
+                Toast.makeText(context, "Failed to create User", Toast.LENGTH_LONG).show()
+            }
+        })
+
         return root
     }
 

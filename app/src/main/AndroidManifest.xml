@@ -3,12 +3,14 @@
     package="com.dicoding.picodiploma.besti">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
 
     <application
@@ -19,6 +21,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BesTi"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".view.home.ui.profile.editprofile.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.result.ResultActivity"
+            android:exported="false" />
         <activity
             android:name=".view.home.ui.detail.DetailActivity"
             android:exported="false" />
