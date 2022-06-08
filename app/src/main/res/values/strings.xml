@@ -3,11 +3,11 @@
     <string name="logosplash">Logo</string>
 
     <string name="title_intro_1">Buang Sampah Pada Tempatnya</string>
-    <string name="title_intro_2">Klasifikasikan Jenis Sampah</string>
+    <string name="title_intro_2">Pilah Sampah Sesuai Jenisnya</string>
     <string name="title_intro_3">Ketahui Sampah yang dapat di daur ulang</string>
     <string name="title_intro_4">Bumi pun Terselamatkan!</string>
-    <string name="desc_intro_1">Apabila sampah dibuang tidak pada tempatnya dan sembarangan, sampah-sampah ini akan merusak pemandangan dan mengotori tempat tinggal.</string>
-    <string name="desc_intro_2">Pilah sampah rumah tangga berdasarkan sifatnya, organik atau anorganik, untuk memudahkan pengolahannya.</string>
+    <string name="desc_intro_1">Apabila sampah dibuang tidak pada tempatnya atau sembarangan, sampah-sampah ini akan merusak pemandangan dan mengotori lingkungan tempat tinggal.</string>
+    <string name="desc_intro_2">Pilah sampah berdasarkan jenisnya, organik atau anorganik, untuk memudahkan pengolahannya.</string>
     <string name="desc_intro_3">Bahan seperti sampah plastik, botol, dan kertas merupakan bahan daur ulang terbaik yang bisa digunakan. Limbah ini tidak dapat diuraikan oleh bakteri dan karenanya tidak dapat dimusnahkan di dalam tanah.</string>
     <string name="desc_intro_4">Dengan mendaur ulang sampah yang susah terurai, hal ini dapat membantu kita menyelamatkan bumi.</string>
     <string name="start_now">Ayo Mulai</string>
@@ -58,6 +58,7 @@
     <string name="judul_berita">Judul Berita</string>
     <string name="deskripsi">Deskripsi</string>
     <string name="save">Simpan</string>
+    <string name="dark_mode">Dark Mode</string>
 
     <string-array name="data_judul_berita">
         <item>Bikin Udara Tercemar, Pembakar Sampah di Jaksel Ditindak Sudin LH</item>

@@ -1,12 +1,30 @@
 package com.dicoding.picodiploma.besti.view.setting
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
 import com.dicoding.picodiploma.besti.R
+import com.dicoding.picodiploma.besti.databinding.ActivityEditProfileBinding
+import com.dicoding.picodiploma.besti.databinding.ActivitySettingBinding
+import com.dicoding.picodiploma.besti.view.setting.theme.ThemeActivity
 
 class SettingActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySettingBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_setting)
+        binding = ActivitySettingBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+        binding.btnDone.setOnClickListener {
+            startActivity(Intent(this, ThemeActivity::class.java))
+        }
+
+        binding.btnDone2.setOnClickListener {
+            startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
+        }
     }
 }

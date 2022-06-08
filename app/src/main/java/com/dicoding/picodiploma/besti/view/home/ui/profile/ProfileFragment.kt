@@ -12,6 +12,7 @@ import com.dicoding.picodiploma.besti.databinding.FragmentProfileBinding
 import com.dicoding.picodiploma.besti.view.camera.CameraActivity
 import com.dicoding.picodiploma.besti.view.home.ui.profile.editprofile.EditProfileActivity
 import com.dicoding.picodiploma.besti.view.login.LoginActivity
+import com.dicoding.picodiploma.besti.view.setting.SettingActivity
 
 class ProfileFragment : Fragment() {
 
@@ -38,6 +39,11 @@ class ProfileFragment : Fragment() {
         _binding!!.button2.setOnClickListener{
             val intent = Intent(activity, EditProfileActivity::class.java)
             activity?.startActivity(intent)
+        }
+
+        _binding!!.button.setOnClickListener{
+            val j = Intent(activity, SettingActivity::class.java)
+            activity?.startActivity(j)
         }
 
         _binding!!.button3.setOnClickListener{

@@ -7,11 +7,13 @@ import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
 import com.dicoding.picodiploma.besti.databinding.ActivityIntroBinding
+import com.dicoding.picodiploma.besti.view.home.HomeActivity
 import com.dicoding.picodiploma.besti.view.login.LoginActivity
 
 class IntroActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityIntroBinding
+    private lateinit var preferenceHelper: PreferenceHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +25,15 @@ class IntroActivity : AppCompatActivity() {
         }
 
         setupView()
+    }
+
+    override fun onStart() {
+        preferenceHelper = PreferenceHelper(this)
+        super.onStart()
+        if (preferenceHelper.getBoolean(PreferenceHelper.STATE_KEY)) {
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
+        }
     }
 
     private fun setupView() {

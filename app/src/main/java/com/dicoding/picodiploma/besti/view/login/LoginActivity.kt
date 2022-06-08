@@ -86,14 +86,6 @@ class LoginActivity : AppCompatActivity() {
         playAnimation()
     }
 
-    override fun onStart() {
-        super.onStart()
-        if (preferenceHelper.getBoolean(PreferenceHelper.STATE_KEY)) {
-            startActivity(Intent(this, HomeActivity::class.java))
-            finish()
-        }
-    }
-
     private fun playAnimation() {
         ObjectAnimator.ofFloat(binding.imageView, View.TRANSLATION_X, -30f, 30f).apply {
             duration = 6000

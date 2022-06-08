@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">BesTi</string>
+    <string name="logosplash">Logo</string>
+
+    <string name="title_intro_1">Throw Garbage in its Place</string>
+    <string name="title_intro_2">Sort Garbage According to Type</string>
+    <string name="title_intro_3">Find out what trash can be recycled</string>
+    <string name="title_intro_4">The Earth is Saved!</string>
+    <string name="desc_intro_1">If garbage is disposed of improperly or carelessly, this garbage will be an eyesore and pollute the living environment.</string>
+    <string name="desc_intro_2">Sort waste by type, organic or inorganic, to facilitate processing.</string>
+    <string name="desc_intro_3">Materials such as plastic waste, bottles, and paper are the best recycled materials that can be used. This waste cannot be broken down by bacteria and therefore cannot be destroyed in the soil.</string>
+    <string name="desc_intro_4">By recycling non-biodegradable waste, this can help us save the earth.</string>
+    <string name="start_now">Let\'s start</string>
+    <string name="imageView">Image View</string>
+    <string name="title_login_page" translatable="false">BesTi (Bebas Sampah Setiap Hari!)</string>
+    <string name="message_login_page" translatable="false">Enter your data first!</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password">Password</string>
+    <string name="copyright">\@ 2022 BesTi</string>
+    <string name="login">Login</string>
+    <string name="daftar">Make a new account</string>
+    <string name="title_signup_page">Complete your data below</string>
+    <string name="name">Name</string>
+    <string name="signup">Register</string>
+    <string name="phone">Phone</string>
+    <string name="gender">Gender</string>
+    <string name="profession">Profession</string>
+    <string name="username">Username</string>
+    <string name="Photo">Photo</string>
+    <string name="Education">Education</string>
+    <string name="Selengkapnya">More</string>
+    <string name="Gusti">Gusti</string>
+    <string name="id">1721000001</string>
+    <string name="BeritaTerbaru">Hot News</string>
+    <string name="btn_selesai">Done</string>
+    <string name="dummy_point">+5</string>
+    <string name="point">Point Earned:</string>
+    <string name="dummy_category">Anorganic</string>
+    <string name="category">Type of Trash</string>
+    <string name="dummy_result">Plastic 97%</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="keluar">LogOut</string>
+    <string name="setting">Setting</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="dummy_points">100pts</string>
+    <string name="points">Points</string>
+    <string name="nomor_hp">Phone</string>
+    <string name="tv_help">Need Help?</string>
+    <string name="ganti_bahasa">Change Language</string>
+    <string name="ganti_tema">Change Theme</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="camera">Camera</string>
+    <string name="judul_berita">Judul Berita</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="save">Save</string>
+    <string name="dark_mode">Dark Mode</string>
+
+    <string-array name="data_judul_berita">
+        <item>Polluting the air, South Jakarta Sub-dept. of Environment Takes Action on Garbage Burners</item>
+        <item>TPA Antang Makassar Over Capacity, 20 Trucks Had to Queue to Dispose of Garbage</item>
+        <item>Relaxing Mothers Throwing Trash on Pekalongan Street, Walkot: Go Viral!</item>
+        <item>TPA Cipayung Depok Overload, Head of UPT Asks TPA Nambo to be Opened Immediately</item>
+        <item>The Cilegon Kranggot Market Irrigation Channel is Partially Clean of Garbage</item>
+        <item>Residents of Geulanggang Gampong Bireuen Mass Gotong Royong</item>
+        <item>Makes it clogged, the garbage in the Cipamingkis River, Bekasi is finally transported too</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Jakarta - The Environment Agency (LH) has taken action against debris collectors who burned garbage on Jl Kebagusan Raya, Kebagusan, Pasar Minggu, South Jakarta. He was prosecuted for causing air pollution in the surrounding environment.
+        "It is forbidden to burn waste, especially since there is a regional regulation that regulates this activity. Moreover, the air around the location is polluted," said Head of the South Jakarta Environmental Sub-dept. M Amin in his statement, Wednesday (25/5/2022).
+        It is known that the Community Participation and Legal Compliance Section of the South Jakarta Environmental Sub-Department and the Jakarta Environment Service, Law Enforcement Sector, discovered firsthand the waste burning activity carried out by Ahmad Ruslani on 19 May. The perpetrator violated Article 130 paragraph 1b of Regional Regulation Number 3 of 2013 concerning Management Rubbish.
+        Referring to Regional Regulation Number 3 of 2013 concerning Waste Management, business actors are subject to administrative sanctions, or forced money for cleaning violators of Rp. 500 thousand. Amin said that the perpetrators of the burning of the waste had paid directly to the DKI Jakarta Environment Agency.
+        "Because there is a violation and there is a legal umbrella. Then the perpetrator is subject to forced money which will be deposited into the Fines for Violation of Regional Regulations. The person concerned has also paid accompanied by proof of payment to the Environmental Service," he said.
+        He hopes that residents will no longer burn garbage indiscriminately. Because the smoke from burning garbage causes air pollution. "Hopefully it can be a lesson for others. The point is to love the environment by throwing garbage in the place that has been provided," he added.
+        </item>
+        <item>Makassar - A total of 20 garbage trucks lined up to enter the Antang Final Disposal Site (TPA), Makassar City. This is because the access to waste disposal is getting narrower in the midst of the over-capacity TPA.
+        According to detikSulsel\'s monitoring, Wednesday (11/5/2022), each truck takes turns to dump the residents\' garbage into the TPA in Tamangapa Village, Manggala District at around 1:45 pm. A number of cows in the TPA area also hindered the loading and unloading of garbage.
+        The officers seemed to be managing every truck that was going in and out of throwing garbage. There are 2 dump trucks allowed in alternately within 10 minutes. Each truck that has finished dumping the garbage at the TPA, switches to a different route when it enters. It\'s just that the exit route is still narrow and slippery. "This is a bit better now, compared to before last Ramadan," said Antang Makassar TPA supervisor, Firman, Wednesday (11/5).
+        He said that before Ramadan the officers moved the loading and unloading trucks. The reason is that the usual place in the middle of the landfill area is getting narrower so that it is no longer able to hold piles of garbage. Every pile of garbage, it is feared that it will slide onto people\'s land. So loading and unloading activities are shifted not far from the initial location. "There was an incident when people entered someone\'s land, residents protested until he closed the landfill," he said.
+        Firman admitted that the condition of the 16.49 hectare Antang TPA was no longer able to accommodate waste. Not to mention that the waste production in Makassar is quite high, reaching 1,000 tons per day that goes to the TPA. "This area of ​​land (TPA Antang) is 16.49 hectares, which normally we can no longer measure," said Firman. According to him, TPA Antang needs to be totally revitalized. The current landfill problem is complex, in the midst of loading and unloading activities, which are still hampered because the landfill is over capacity. "We think about how all the garbage can be served by all sub-districts, by also thinking about the congestion. So, it\'s complete," he explained.
+        </item>
+        <item>Pekalongan - A number of mothers in Pekalongan City, Central Java, looked relaxed when throwing plastic bags full of garbage on the edge of Jalan Banyurip. The action of mothers throwing garbage carelessly to the side of the road was recorded in a video that went viral on social media. In the almost two-minute video, there is a statement asking the public not to litter on the side of the road. "It\'s a pity, people\'s houses are used as garbage dumps in front of people," wrote the statement.
+        On the Instagram account @pekalonganinfo, the video uploaded since Tuesday (10/5) has been watched by netizens more than 130 thousand times. From detikJateng\'s search, Wednesday (11/05/2022), the location of mothers littering is right at the mouth of Gang 4, Banyurip, Pekalongan Selatan District. At the mouth of the alley, there is an old banner that reads prohibiting littering. To note, the mouth of Gang 4 is also flanked by food stalls and young coconut ice stalls.
+        The shop owner on Jalan Banyurip, Muhamad (35), said the road in front of his shop had been the target of littering for years. According to him, the perpetrators were not local residents. "Usually it is women who take out the garbage, from dawn until six in the morning. I often catch them red-handed. Often reminded but stubborn. We are tired too," said Muhamad.
+        "Don\'t they have feelings, throw garbage in front of people selling ice, near food stalls too," he added. The Buaran resident added that the pile of garbage is usually taken by a garbage truck. "Usually the garbage is transported, because yesterday was Syawalan, so it was not (taken). But the point is not that. The point is this is a public road, there are no trash cans, not a garbage dump either," said Muhammad.
+        South Pekalongan Sub-district Head Rusmani Budiharjo said the mountain of garbage in the viral video on social media had been cleaned up. "Our friend, Kasi Trantib Banyurip Village, has been monitoring and educating residents who throw garbage there," said Rusmani. Separately, Pekalongan Mayor Achmad Afzan Arslan Djunaid, said the viral video was a lesson for residents who like to litter.
+        "I agree, let\'s make it viral, so that people (indiscriminate litter) will give up," said Aaf, the nickname for the Pekalongan Mayor, when met at the Pekalongan Kodim Headquarters, Wednesday (11/05/2022). Aaf explained that the Final Disposal Site (TPA) in Pekalongan accommodates an average of 120-150 tons of waste per day. "No matter how big the budget for waste in Pekalongan City, no matter how good the program is, if it doesn\'t get support from the community, it will not be optimal," said Aaf.
+        </item>
+        <item>Depok - Garbage at the Cipayung Final Disposal Site (TPA), Depok, West Java, has exceeded its capacity. The head of UPT Cipayung asked the West Java Provincial Government to immediately open the Lulut-Nambo TPPAS. "We encourage the province to immediately open a garbage disposal site (TPS)," said Head of UPT Cipayung, Dadan Ardan Kurniawan, in Cipayung, Monday (23/5/2022).
+        Dadan said that the waste in Depok City reaches 1,100 tons in a day. The height of the mountain of garbage at the Cipayung TPA has reached 23 meters. "The average height is 23 meters. The capacity or capacity of the Cipayung TPA is 1.3 million cubic meters. Now it has reached 2.5 million cubic meters," he said.
+        TPA Cipayung has three landfills or operating locations. Dadan is pessimistic that the Cipayung TPA will be able to accommodate waste in the next few months. "Actually we are already very risky. We said another month, two months, three months. Maybe one month we are already pessimistic," said Ardan.
+        In addition to waiting for the Lulut-Nambo TPPAS to open, his party is trying to maximize the place to process waste with environmentally friendly technology. "We are here to make efforts to organize the waste that can still be moved to a point where the height is still not optimal. Rehabilitate the facilities and infrastructure of the Cipayung TPA, such as later normalizing channels, operating roads, and so on," said Ardan.
+        The TPA will also build a waste processing facility with environmentally friendly technology. It also plans to use up old waste to be processed. "Hopefully in 2024 we can leave a 10 percent radius of waste," he said.
+        </item>
+        <item>Cilegon - Some of the garbage piled up in the irrigation canal at Pasar Kranggot, Cilegon, Banten, has begun to be transported. About 50 meters of irrigation is clean of garbage.
+        After there was a lot of news about piles of garbage in the irrigation of Kranggot Market, Cilegon, which had been piling up and not being transported, the government finally stepped in to clean up the garbage that was starting to smell bad.
+        Cleaners have been deployed since Monday (9/5) afternoon to clean up the garbage. Until Wednesday (11/5), officers were seen still struggling to transport garbage from irrigation to the mainland. "Although some of it has started to clean, we are still trying to clean up all the garbage in the irrigation," said Cilegon Mayor Helldy Agustian, Wednesday (11/5/2022).
+        Helldy said that some of the obstacles faced by the cleaning staff were street vendors selling on the irrigation side. According to him, the street vendors occupy land that is not designated for selling. The street vendors who sell there will be relocated to the market.
+        "Why can\'t it be fast, one of the problems is the traders on the edge. According to information, it\'s an illegal building. We\'ll fix it later to move it into the market," he said. Helldy said that his party had ordered the relevant agencies to clean up the garbage that had piled up in the irrigation canal. Likewise with the problem of street vendors who sell on the irrigation side. "They throw (garbage) behind (irrigation). We will fix this later," he said.
+        </item>
+        <item>SERAMBINEWS.COM, BIREUEN – Hundreds of residents of Gampong Geulanggang Gampong/Cureh, Juang Bireuen City, Sunday (13/03/2022) mass gotong royong, the location of mass gotong royong is in the Bukit Cinta area, south of the village and has been a location for dumping garbage. haphazard. The Bukit Cinta area has been along the road starting from the incline road and up to the Kupula Indah BTN border, seen several piles of garbage dumped by irresponsible people, garbage piled up and a pungent smell appeared, several stray dogs were often seen in the area.
+        Garbage is generally plastic and its contents and some look like toddler pampers. In addition to plastic, there are also used fertilizer sacks filled with garbage and other foreign objects scattered in the area. It is easy to dispose of in the area because the location is a bit far from residential areas and also quiet when it is near maqrib or at night, finally the garbage is clearly visible and dirty and causes an unpleasant smell.
+        Gotong royong involved hundreds of people and also brought in a garbage truck to transport the garbage and most of it was burned on site. Acting Keuchik Geulanggang Gampong/Cureh, Mursyidin S Sos told Serambinews.com that gotong royong was mainly in the Bukit Cinta area because a lot of garbage was thrown carelessly and was very dirty. In addition to these areas, gotong royong was also carried out at several other points to improve the cleanliness of the village as well as to welcome the holy month of Ramadan. "It\'s easy for residents to throw garbage in the area and several other locations including the Cureh Main Market area, Bireuen, it\'s still clean," he said.(*)
+        </item>
+        <item>Bekasi - Garbage piled up in Cipamingkis River, Bekasi City, was transported by officers. The pile of garbage had previously caused the flow of the river to be clogged.
+         Officers transport garbage at the Cipamingkis River stream, Bekasi City, Thursday (19/5/2022).
+        </item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/s_pembakar_sampah</item>
+        <item>@drawable/s_truksampah_antri</item>
+        <item>@drawable/s_emak_buang_sampah</item>
+        <item>@drawable/s_tpa_depok_overload</item>
+        <item>@drawable/s_saluran_irigasi</item>
+        <item>@drawable/s_warga_gotongroyong</item>
+        <item>@drawable/s_sampah_dikali</item>
+    </integer-array>
+
+    <integer-array name="data_photo_vector">
+        <item>@drawable/vs_pembakar_sampah</item>
+        <item>@drawable/vs_truksampah_antri</item>
+        <item>@drawable/vs_emak_buang_sampah</item>
+        <item>@drawable/vs_tpa_depok_overload</item>
+        <item>@drawable/vs_saluran_irigasi</item>
+        <item>@drawable/vs_warga_gotongroyong</item>
+        <item>@drawable/vs_sampah_dikali</item>
+    </integer-array>
+</resources>
