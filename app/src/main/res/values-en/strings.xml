@@ -59,6 +59,9 @@
     <string name="deskripsi">Deskripsi</string>
     <string name="save">Save</string>
     <string name="dark_mode">Dark Mode</string>
+    <string name="judul_saran">Judul saran</string>
+    <string name="buat_sendiri_yuk">Do It Yourself!!</string>
+    <string name="hasil_deteksi">Detection Result</string>
 
     <string-array name="data_judul_berita">
         <item>Polluting the air, South Jakarta Sub-dept. of Environment Takes Action on Garbage Burners</item>

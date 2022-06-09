@@ -40,15 +40,10 @@ class SelectImageFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-    private lateinit var currentPhotoPath: String
-
     private var getFile: File? = null
 
     companion object {
         const val CAMERA_X_RESULT = 200
-
-        private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
-        private const val REQUEST_CODE_PERMISSIONS = 10
     }
 
     private var activityResultLauncher: ActivityResultLauncher<Array<String>> =

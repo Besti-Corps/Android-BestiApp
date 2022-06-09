@@ -44,8 +44,8 @@ class HomeFragment : Fragment() {
         homeViewModel.getInfoResponse().observe(viewLifecycleOwner, Observer <InfoResponse>{
             if(it != null){
                 Toast.makeText(context, it.status, Toast.LENGTH_LONG).show()
-                var tvName: TextView = requireActivity().findViewById(R.id.tv_username)
-                var tvId: TextView = requireActivity().findViewById(R.id.tv_description)
+                val tvName: TextView = requireActivity().findViewById(R.id.tv_username)
+                val tvId: TextView = requireActivity().findViewById(R.id.tv_description)
                 tvName.text = "Nama : " + it.data.name
                 tvId.text = "ID : " + it.data.id.toString()
             }

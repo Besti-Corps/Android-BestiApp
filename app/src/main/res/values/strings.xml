@@ -59,6 +59,91 @@
     <string name="deskripsi">Deskripsi</string>
     <string name="save">Simpan</string>
     <string name="dark_mode">Dark Mode</string>
+    <string name="judul_saran">Judul saran</string>
+    <string name="buat_sendiri_yuk">Buat Sendiri Yuk!!</string>
+    <string name="hasil_deteksi">Hasil Deteksi</string>
+
+    //ORGANIK
+    <string-array name="saran_organik">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <string-array name="desc_organik">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <integer-array name="img_organik">
+        <item>@drawable/s_pembakar_sampah</item>
+    </integer-array>
+
+    //ANORGANIK
+    <string-array name="saran_anorganik">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <string-array name="desc_anorganik">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <string-array name="img_anorganik">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    //KERTAS
+    <string-array name="saran_kertas">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <string-array name="desc_kertas">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <string-array name="img_kertas">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    //B3
+    <string-array name="saran_B3">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <string-array name="desc_B3">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <string-array name="img_B3">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    //RESIDU
+    <string-array name="saran_residu">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <string-array name="desc_residu">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <string-array name="img_residu">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+
+    //BERITA
 
     <string-array name="data_judul_berita">
         <item>Bikin Udara Tercemar, Pembakar Sampah di Jaksel Ditindak Sudin LH</item>
