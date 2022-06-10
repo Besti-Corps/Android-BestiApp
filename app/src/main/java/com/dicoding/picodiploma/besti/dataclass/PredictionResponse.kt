@@ -14,11 +14,12 @@ data class PredictionResponse(
     val predict: ArrayList<DataPredict>
 )
 
+@Parcelize
 data class DataPredict(
     @SerializedName("label")
     val label: String,
     @SerializedName("accuracy")
     val accuracy: Int
-)
+):Parcelable
 
 
