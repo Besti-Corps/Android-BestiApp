@@ -1,15 +1,12 @@
 package com.dicoding.picodiploma.besti.view.result
 
-import android.content.Intent
 import android.os.Bundle
+import android.os.Parcelable
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.bumptech.glide.Glide
 import com.dicoding.picodiploma.besti.R
 import com.dicoding.picodiploma.besti.databinding.ActivityResultBinding
 import com.dicoding.picodiploma.besti.dataclass.DataPredict
-import com.dicoding.picodiploma.besti.view.home.HomeActivity
-import com.dicoding.picodiploma.besti.view.home.ui.home.HomeFragment
 
 
 class ResultActivity : AppCompatActivity() {
@@ -36,13 +33,17 @@ class ResultActivity : AppCompatActivity() {
             rvSaran.setHasFixedSize(true)
             val listHeroAdapter = ListSaranAdapter(list)
             rvSaran.adapter = listHeroAdapter
-
             list.addAll(listSaran)
+
+            val bundle = intent.extras
+            val data: DataPredict? = bundle?.getParcelable<DataPredict>("EXTRA_DATA")!! as DataPredict
+            tvLabel.text = data?.label
+            tvAccuracy.text = data?.accuracy.toString()
         }
 
         binding.btnDone.setOnClickListener{
 
-            finish()
+
         }
 
     }

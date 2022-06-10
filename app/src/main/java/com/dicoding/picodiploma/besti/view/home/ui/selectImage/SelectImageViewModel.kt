@@ -13,9 +13,9 @@ import retrofit2.Response
 
 class SelectImageViewModel : ViewModel() {
 
-    val predictImage = MutableLiveData<DataPredict>()
+    val predictImage = MutableLiveData<ArrayList<DataPredict>>()
 
-    fun getPredict(): MutableLiveData<DataPredict> {
+    fun getPredict(): MutableLiveData<ArrayList<DataPredict>> {
         return predictImage
     }
 

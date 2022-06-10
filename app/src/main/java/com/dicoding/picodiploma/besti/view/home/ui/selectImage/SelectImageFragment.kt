@@ -100,9 +100,10 @@ class SelectImageFragment : Fragment() {
             )
 
             viewModel.setImage(imageMultipart)
-            viewModel.getPredict().observe(viewLifecycleOwner, Observer<DataPredict> {
+            viewModel.getPredict().observe(viewLifecycleOwner, Observer<ArrayList<DataPredict>> {
                 if (it != null) {
                     val intent = Intent(activity, ResultActivity::class.java)
+                    intent.putExtra("EXTRA_DATA", it)
                     startActivity(intent)
                 }
             })
