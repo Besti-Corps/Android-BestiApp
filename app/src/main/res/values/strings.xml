@@ -147,6 +147,23 @@
 
     //BERITA
 
+    <string name="feedback">Feedback</string>
+    <string name="change">Ubah</string>
+    <string name="update">Update</string>
+    <string name="kirim">Kirim</string>
+    <string name="add">Tambah</string>
+    <string name="empty">Field can not be blank</string>
+    <string name="changed">Satu item berhasil diubah</string>
+    <string name="added">Satu item berhasil ditambahkan</string>
+    <string name="date">Date</string>
+    <string name="delete">Hapus</string>
+    <string name="cancel">Batal</string>
+    <string name="message_cancel">Apakah anda ingin membatalkan perubahan pada form?</string>
+    <string name="message_delete">Apakah anda yakin ingin menghapus item ini?</string>
+    <string name="yes">Ya</string>
+    <string name="deleted">Satu item berhasil dihapus</string>
+    <string name="no">Tidak</string>
+
     <string-array name="data_judul_berita">
         <item>Bikin Udara Tercemar, Pembakar Sampah di Jaksel Ditindak Sudin LH</item>
         <item>TPA Antang Makassar Over Kapasitas, 20 Truk Sempat Antre Buang Sampah</item>

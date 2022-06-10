@@ -40,5 +40,8 @@ class PreferenceHelper(context: Context) {
     companion object{
         const val PREF_TOKEN = "TOKEN"
         const val STATE_KEY = "STATE KEY"
+        const val TYPE = "TYPE"
+        const val ACCURACY = "ACCURACY"
+        const val LABEL = "LABEL"
     }
 }

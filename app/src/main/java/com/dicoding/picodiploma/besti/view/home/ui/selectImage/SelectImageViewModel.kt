@@ -1,8 +1,10 @@
 package com.dicoding.picodiploma.besti.view.home.ui.selectImage
 
 import android.util.Log
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.dicoding.picodiploma.besti.PreferenceHelper
 import com.dicoding.picodiploma.besti.api.Retrofit
 import com.dicoding.picodiploma.besti.dataclass.DataPredict
 import com.dicoding.picodiploma.besti.dataclass.PredictionResponse
@@ -13,9 +15,9 @@ import retrofit2.Response
 
 class SelectImageViewModel : ViewModel() {
 
-    val predictImage = MutableLiveData<DataPredict>()
+    val predictImage = MutableLiveData<PredictionResponse>()
 
-    fun getPredict(): MutableLiveData<DataPredict> {
+    fun getPredict(): MutableLiveData<PredictionResponse> {
         return predictImage
     }
 
@@ -30,11 +32,12 @@ class SelectImageViewModel : ViewModel() {
                     if (response.isSuccessful) {
                         val responseBody = response.body()
                         if (responseBody != null) {
-                            predictImage.postValue(response.body()!!.predict)
+                            predictImage.postValue(response.body()!!)
+
                             Log.e("message", responseBody.status)
                         }
                     } else {
-                        predictImage.postValue(response.body()!!.predict)
+                        predictImage.postValue(response.body()!!)
                         val responseBody = response.body()
                         responseBody?.status?.let { Log.e("message", it) }
                     }

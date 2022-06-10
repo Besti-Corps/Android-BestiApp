@@ -11,7 +11,7 @@ data class PredictionResponse(
     @SerializedName("type")
     val type: String,
     @SerializedName("predict")
-    val predict: DataPredict
+    val predict: ArrayList<DataPredict>
 )
 
 data class DataPredict(

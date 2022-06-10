@@ -1,5 +1,6 @@
 package com.dicoding.picodiploma.besti.view.setting.theme
 
+import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
