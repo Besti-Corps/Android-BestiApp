@@ -2,7 +2,7 @@ package com.dicoding.picodiploma.besti.dataclass
 
 import com.google.gson.annotations.SerializedName
 
-data class UpdateResponse (
+data class UpdateResponse(
     @SerializedName("status")
     var status: String,
     @SerializedName("data")

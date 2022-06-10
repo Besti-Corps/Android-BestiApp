@@ -1,12 +1,9 @@
 package com.dicoding.picodiploma.besti.view.home.ui.selectImage
 
 import android.util.Log
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.dicoding.picodiploma.besti.PreferenceHelper
 import com.dicoding.picodiploma.besti.api.Retrofit
-import com.dicoding.picodiploma.besti.dataclass.DataPredict
 import com.dicoding.picodiploma.besti.dataclass.PredictionResponse
 import okhttp3.MultipartBody
 import retrofit2.Call

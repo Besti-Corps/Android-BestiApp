@@ -23,7 +23,7 @@ class EditProfilViewModel : ViewModel() {
         return updateUser
     }
 
-    fun setInfo(authToken : String) {
+    fun setInfo(authToken: String) {
         Retrofit.apiService
             .getInfo(authToken)
             .enqueue(object : Callback<InfoResponse> {
@@ -35,8 +35,7 @@ class EditProfilViewModel : ViewModel() {
                         infoUser.postValue(response.body())
                         val user = response.body()
                         Log.e("message", user!!.status)
-                    }
-                    else {
+                    } else {
                         infoUser.postValue(response.body())
                         val fail = response.body()
                         Log.e("message", fail?.status.toString())
@@ -49,7 +48,15 @@ class EditProfilViewModel : ViewModel() {
             })
     }
 
-    fun setUpdate(authToken : String, name: String, profession: String, gender: String, phone: String,  email: String, password: String) {
+    fun setUpdate(
+        authToken: String,
+        name: String,
+        profession: String,
+        gender: String,
+        phone: String,
+        email: String,
+        password: String
+    ) {
         Retrofit.apiService
             .getUpdate(authToken, name, profession, gender, phone, email, password)
             .enqueue(object : Callback<UpdateResponse> {
@@ -61,8 +68,7 @@ class EditProfilViewModel : ViewModel() {
                         updateUser.postValue(response.body())
                         val user = response.body()
                         Log.e("message", user!!.status)
-                    }
-                    else {
+                    } else {
                         updateUser.postValue(response.body())
                         val fail = response.body()
                         Log.e("message", fail?.status.toString())

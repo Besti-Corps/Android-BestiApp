@@ -1,24 +1,17 @@
 package com.dicoding.picodiploma.besti.view.home.ui.profile.feedback
 
-import android.content.Intent
-import android.content.pm.PackageManager
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.SyncStateContract.Helpers.update
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import androidx.sqlite.db.SupportSQLiteCompat.Api16Impl.cancel
 import com.dicoding.picodiploma.besti.R
 import com.dicoding.picodiploma.besti.ViewModelFactorys
 import com.dicoding.picodiploma.besti.database.Feedback
 import com.dicoding.picodiploma.besti.databinding.ActivityFeedbackBinding
 import com.dicoding.picodiploma.besti.helper.DateHelper
-import com.dicoding.picodiploma.besti.view.setting.theme.ViewModelFactory
-import java.net.URLEncoder
 
 class FeedbackActivity : AppCompatActivity() {
     companion object {
@@ -28,7 +21,7 @@ class FeedbackActivity : AppCompatActivity() {
     }
 
     private var isEdit = false
-    private var feedback:Feedback? = null
+    private var feedback: Feedback? = null
 
     private lateinit var noteAddUpdateViewModel: FeedbackViewModel
     private var _activityNoteAddUpdateBinding: ActivityFeedbackBinding? = null
@@ -118,6 +111,7 @@ class FeedbackActivity : AppCompatActivity() {
         }
         return super.onCreateOptionsMenu(menu)
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_delete -> showAlertDialog(ALERT_DIALOG_DELETE)
@@ -125,6 +119,7 @@ class FeedbackActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
     override fun onBackPressed() {
         showAlertDialog(ALERT_DIALOG_CLOSE)
     }

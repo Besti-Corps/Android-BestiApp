@@ -5,7 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Saran(
-    var name:String,
+    var name: String,
     var description: String,
     var photo: Int
-): Parcelable
+) : Parcelable

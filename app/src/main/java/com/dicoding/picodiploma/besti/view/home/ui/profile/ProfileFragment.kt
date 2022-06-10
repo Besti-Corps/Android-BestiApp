@@ -9,9 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.picodiploma.besti.PreferenceHelper
 import com.dicoding.picodiploma.besti.databinding.FragmentProfileBinding
-import com.dicoding.picodiploma.besti.view.camera.CameraActivity
 import com.dicoding.picodiploma.besti.view.home.ui.profile.editprofile.EditProfileActivity
-import com.dicoding.picodiploma.besti.view.home.ui.profile.feedback.FeedbackActivity
 import com.dicoding.picodiploma.besti.view.home.ui.profile.feedback.ListFeedbackActivity
 import com.dicoding.picodiploma.besti.view.login.LoginActivity
 import com.dicoding.picodiploma.besti.view.setting.SettingActivity
@@ -38,22 +36,22 @@ class ProfileFragment : Fragment() {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        _binding!!.button2.setOnClickListener{
+        _binding!!.button2.setOnClickListener {
             val intent = Intent(activity, EditProfileActivity::class.java)
             activity?.startActivity(intent)
         }
 
-        _binding!!.button.setOnClickListener{
+        _binding!!.button.setOnClickListener {
             val j = Intent(activity, SettingActivity::class.java)
             activity?.startActivity(j)
         }
 
-        _binding!!.button4.setOnClickListener{
+        _binding!!.button4.setOnClickListener {
             val j = Intent(activity, ListFeedbackActivity::class.java)
             activity?.startActivity(j)
         }
 
-        _binding!!.button3.setOnClickListener{
+        _binding!!.button3.setOnClickListener {
             preferenceHelper.clear()
             val i = Intent(activity, LoginActivity::class.java)
             activity?.startActivity(i)

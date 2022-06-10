@@ -12,12 +12,12 @@ import androidx.core.util.Pair
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.dicoding.picodiploma.besti.R
-import com.dicoding.picodiploma.besti.view.home.ui.detail.DetailActivity
 import com.dicoding.picodiploma.besti.view.home.ui.detail.DetailSaranActivity
 import com.dicoding.picodiploma.besti.view.home.ui.home.ListBeritaAdapter
 
-class ListSaranAdapter(private val listSaran: ArrayList<Saran>): RecyclerView.Adapter<ListSaranAdapter.ListViewHolder>() {
-    class ListViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView){
+class ListSaranAdapter(private val listSaran: ArrayList<Saran>) :
+    RecyclerView.Adapter<ListSaranAdapter.ListViewHolder>() {
+    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgPhoto: ImageView = itemView.findViewById(R.id.img_saran)
         var tvName: TextView = itemView.findViewById(R.id.tv_name_saran)
         fun bind(saran: Saran) {

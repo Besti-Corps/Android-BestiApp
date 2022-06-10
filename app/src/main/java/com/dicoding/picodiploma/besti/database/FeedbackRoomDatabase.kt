@@ -7,18 +7,23 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [Feedback::class],
-    version = 1)
+    version = 1
+)
 abstract class FeedbackRoomDatabase : RoomDatabase() {
     abstract fun feedbackDao(): FeedbackDao
+
     companion object {
         @Volatile
         private var INSTANCE: FeedbackRoomDatabase? = null
+
         @JvmStatic
         fun getDatabase(context: Context): FeedbackRoomDatabase {
             if (INSTANCE == null) {
                 synchronized(FeedbackRoomDatabase::class.java) {
-                    INSTANCE = Room.databaseBuilder(context.applicationContext,
-                        FeedbackRoomDatabase::class.java, "feedback_database")
+                    INSTANCE = Room.databaseBuilder(
+                        context.applicationContext,
+                        FeedbackRoomDatabase::class.java, "feedback_database"
+                    )
                         .build()
                 }
             }

@@ -1,18 +1,15 @@
 package com.dicoding.picodiploma.besti.view.result
 
-import android.content.Intent
+import android.annotation.SuppressLint
+import android.graphics.BitmapFactory
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.dicoding.picodiploma.besti.PreferenceHelper
 import com.dicoding.picodiploma.besti.R
 import com.dicoding.picodiploma.besti.databinding.ActivityResultBinding
-import com.dicoding.picodiploma.besti.dataclass.DataPredict
-import com.dicoding.picodiploma.besti.view.home.HomeActivity
-import com.dicoding.picodiploma.besti.view.home.ui.home.HomeFragment
+import com.dicoding.picodiploma.besti.rotateBitmap
 
 
 class ResultActivity : AppCompatActivity() {
@@ -23,6 +20,7 @@ class ResultActivity : AppCompatActivity() {
     private val list = ArrayList<Saran>()
     private lateinit var preferenceHelper: PreferenceHelper
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
@@ -30,12 +28,19 @@ class ResultActivity : AppCompatActivity() {
 
         preferenceHelper = PreferenceHelper(this)
 
-        //Glide.with(applicationContext)
-          //  .load()
-          //  .into(findViewById(R.id.imgCategory))
-        findViewById<TextView>(R.id.tv_label).text = preferenceHelper.getString(PreferenceHelper.LABEL)
-        findViewById<TextView>(R.id.tv_accuracy).text = preferenceHelper.getString(PreferenceHelper.ACCURACY) + "%"
-        findViewById<TextView>(R.id.tv_type).text = preferenceHelper.getString(PreferenceHelper.TYPE)
+        val image = intent.getStringExtra("BITMAP")
+        val result = rotateBitmap(
+            BitmapFactory.decodeFile(image), true
+        )
+        Glide.with(applicationContext)
+            .load(result)
+            .into(binding.imgCategory)
+        binding.tvLabel.text =
+            preferenceHelper.getString(PreferenceHelper.LABEL)
+        binding.tvAccuracy.text =
+            preferenceHelper.getString(PreferenceHelper.ACCURACY) + "%"
+        binding.tvType.text =
+            preferenceHelper.getString(PreferenceHelper.TYPE)
 
 
         binding.apply {
@@ -44,25 +49,87 @@ class ResultActivity : AppCompatActivity() {
             val listHeroAdapter = ListSaranAdapter(list)
             rvSaran.adapter = listHeroAdapter
 
-            list.addAll(listSaran)
+            if (preferenceHelper.getString(PreferenceHelper.TYPE) == "Organik") {
+                list.addAll(organik)
+            } else if (preferenceHelper.getString(PreferenceHelper.TYPE) == "Anorganik") {
+                list.addAll(anorganik)
+            } else if (preferenceHelper.getString(PreferenceHelper.TYPE) == "Kertas") {
+                list.addAll(kertas)
+            } else if (preferenceHelper.getString(PreferenceHelper.TYPE) == "B3") {
+                list.addAll(b3)
+            } else if (preferenceHelper.getString(PreferenceHelper.TYPE) == "Residu") {
+                list.addAll(residu)
+            }
         }
 
-        binding.btnDone.setOnClickListener{
+        binding.btnDone.setOnClickListener {
             finish()
         }
 
     }
 
-    private val listSaran: ArrayList<Saran>
-        get(){
-                val dataName = resources.getStringArray(R.array.saran_organik)
-                val dataDescription = resources.getStringArray(R.array.desc_organik)
-                val dataPhoto = resources.obtainTypedArray(R.array.img_organik)
-                val listsaran = ArrayList<Saran>()
-                for (i in dataName.indices) {
-                    val saran = Saran(dataName[i],dataDescription[i], dataPhoto.getResourceId(i, -1))
-                    listsaran.add(saran)
-                }
-                return listsaran
+    private val organik: ArrayList<Saran>
+        get() {
+            val dataName = resources.getStringArray(R.array.saran_organik)
+            val dataDescription = resources.getStringArray(R.array.desc_organik)
+            val dataPhoto = resources.obtainTypedArray(R.array.img_organik)
+            val listsaran = ArrayList<Saran>()
+            for (i in dataName.indices) {
+                val saran = Saran(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+                listsaran.add(saran)
+            }
+            return listsaran
         }
+    private val anorganik: ArrayList<Saran>
+        get() {
+            val dataName = resources.getStringArray(R.array.saran_anorganik)
+            val dataDescription = resources.getStringArray(R.array.desc_anorganik)
+            val dataPhoto = resources.obtainTypedArray(R.array.img_anorganik)
+            val listsaran = ArrayList<Saran>()
+            for (i in dataName.indices) {
+                val saran = Saran(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+                listsaran.add(saran)
+            }
+            return listsaran
+        }
+    private val kertas: ArrayList<Saran>
+        get() {
+            val dataName = resources.getStringArray(R.array.saran_kertas)
+            val dataDescription = resources.getStringArray(R.array.desc_kertas)
+            val dataPhoto = resources.obtainTypedArray(R.array.img_kertas)
+            val listsaran = ArrayList<Saran>()
+            for (i in dataName.indices) {
+                val saran = Saran(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+                listsaran.add(saran)
+            }
+            return listsaran
+        }
+
+    private val b3: ArrayList<Saran>
+        get() {
+            val dataName = resources.getStringArray(R.array.saran_B3)
+            val dataDescription = resources.getStringArray(R.array.desc_B3)
+            val dataPhoto = resources.obtainTypedArray(R.array.desc_B3)
+            val listsaran = ArrayList<Saran>()
+            for (i in dataName.indices) {
+                val saran = Saran(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+                listsaran.add(saran)
+            }
+            return listsaran
+        }
+
+    private val residu: ArrayList<Saran>
+        get() {
+            val dataName = resources.getStringArray(R.array.saran_residu)
+            val dataDescription = resources.getStringArray(R.array.desc_residu)
+            val dataPhoto = resources.obtainTypedArray(R.array.img_residu)
+            val listsaran = ArrayList<Saran>()
+            for (i in dataName.indices) {
+                val saran = Saran(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+                listsaran.add(saran)
+            }
+            return listsaran
+        }
+
+
 }

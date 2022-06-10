@@ -1,7 +1,9 @@
 package com.dicoding.picodiploma.besti.view.home.ui.selectImage
 
 import android.Manifest
+import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -25,7 +27,10 @@ import com.dicoding.picodiploma.besti.view.result.ResultActivity
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
+import java.io.ByteArrayOutputStream
 import java.io.File
+import java.io.FileOutputStream
+
 
 class SelectImageFragment : Fragment() {
 
@@ -85,7 +90,8 @@ class SelectImageFragment : Fragment() {
     private fun uploadImage() {
         if (getFile != null) {
             val file = reduceFileImage(getFile as File)
-
+            val filePath = file.path
+            val bitmap = BitmapFactory.decodeFile(filePath)
             val requestImageFile = file.asRequestBody("image/jpeg".toMediaTypeOrNull())
             val imageMultipart: MultipartBody.Part = MultipartBody.Part.createFormData(
                 "image",
@@ -104,6 +110,7 @@ class SelectImageFragment : Fragment() {
                     preferenceHelper.put(LABEL, label[0].label)
                     Toast.makeText(activity, "ACCURACY" + preferenceHelper.getString(ACCURACY), Toast.LENGTH_SHORT).show()
                     val intent = Intent(activity, ResultActivity::class.java)
+                    intent.putExtra("BITMAP", filePath)
                     startActivity(intent)
                 }
             })
@@ -139,4 +146,6 @@ class SelectImageFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+
 }

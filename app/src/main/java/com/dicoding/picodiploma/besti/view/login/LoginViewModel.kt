@@ -3,8 +3,8 @@ package com.dicoding.picodiploma.besti.view.login
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.dicoding.picodiploma.besti.dataclass.LoginResponse
 import com.dicoding.picodiploma.besti.api.Retrofit
+import com.dicoding.picodiploma.besti.dataclass.LoginResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

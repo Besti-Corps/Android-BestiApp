@@ -1,11 +1,11 @@
 package com.dicoding.picodiploma.besti.view.home.ui.profile.editprofile
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.trimmedLength
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -16,7 +16,6 @@ import com.dicoding.picodiploma.besti.databinding.ActivityEditProfileBinding
 import com.dicoding.picodiploma.besti.dataclass.InfoResponse
 import com.dicoding.picodiploma.besti.dataclass.UpdateResponse
 import com.dicoding.picodiploma.besti.view.home.HomeActivity
-import com.dicoding.picodiploma.besti.view.login.LoginActivity
 
 class EditProfileActivity : AppCompatActivity() {
 
@@ -29,15 +28,17 @@ class EditProfileActivity : AppCompatActivity() {
         binding = ActivityEditProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        editProfilViewModel = ViewModelProvider(this,
-            ViewModelProvider.NewInstanceFactory()).get(EditProfilViewModel::class.java)
+        editProfilViewModel = ViewModelProvider(
+            this,
+            ViewModelProvider.NewInstanceFactory()
+        ).get(EditProfilViewModel::class.java)
 
         preferenceHelper = PreferenceHelper(this)
 
         editProfilViewModel.setInfo(preferenceHelper.getString(PREF_TOKEN).toString())
 
-        editProfilViewModel.getInfoResponse().observe(this, Observer <InfoResponse>{
-            if(it != null){
+        editProfilViewModel.getInfoResponse().observe(this, Observer<InfoResponse> {
+            if (it != null) {
                 Toast.makeText(applicationContext, it.status, Toast.LENGTH_LONG).show()
                 findViewById<TextView>(R.id.nameEditText).text = it.data.name
                 findViewById<TextView>(R.id.professionEditText).text = it.data.profession
@@ -46,18 +47,20 @@ class EditProfileActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.emailEditText).text = it.data.email
                 findViewById<TextView>(R.id.passwordEditText).text = "*********"
             }
-            if(it == null){
-                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG).show()
+            if (it == null) {
+                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG)
+                    .show()
             }
         })
 
-        editProfilViewModel.getUpdateResponse().observe(this, Observer <UpdateResponse>{
-            if(it != null){
+        editProfilViewModel.getUpdateResponse().observe(this, Observer<UpdateResponse> {
+            if (it != null) {
                 Toast.makeText(applicationContext, it.status, Toast.LENGTH_LONG).show()
                 startActivity(Intent(this, HomeActivity::class.java))
             }
-            if(it == null){
-                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG).show()
+            if (it == null) {
+                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG)
+                    .show()
             }
         })
 
@@ -87,7 +90,7 @@ class EditProfileActivity : AppCompatActivity() {
                 editProfilViewModel.infoUser.value!!.data.gender == gender -> {
                     binding.genderEditTextLayout.error = "Tidak ada perubahan jenis kelamin"
                 }
-                phone!!.isEmpty() -> {
+                phone.isEmpty() -> {
                     binding.phoneEditTextLayout.error = "Masukkan phone"
                 }
                 editProfilViewModel.infoUser.value!!.data.phone == phone -> {
@@ -109,13 +112,21 @@ class EditProfileActivity : AppCompatActivity() {
                     binding.passwordEditTextLayout.error = "Password harus lebih dari 6 karakter"
                 }
                 else -> {
-                    editProfilViewModel.setUpdate(preferenceHelper.getString(PREF_TOKEN).toString(), name, profession, gender, phone, email, password)
+                    editProfilViewModel.setUpdate(
+                        preferenceHelper.getString(PREF_TOKEN).toString(),
+                        name,
+                        profession,
+                        gender,
+                        phone,
+                        email,
+                        password
+                    )
                 }
             }
         }
     }
 
-    companion object{
+    companion object {
         const val NAME = "Name"
     }
 }

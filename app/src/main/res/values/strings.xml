@@ -76,40 +76,67 @@
     </string-array>
 
     <integer-array name="img_organik">
-        <item>@drawable/s_pembakar_sampah</item>
-        <item>@drawable/s_pembakar_sampah</item>
+        <item>@drawable/s_kompos</item>
+        <item>@drawable/s_pakan</item>
     </integer-array>
 
     //ANORGANIK
     <string-array name="saran_anorganik">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
+        <item>Pot Bunga</item>
+        <item>Botol Penyiram Tanaman</item>
+        <item>Penyimpan Alat Tulis</item>
+        <item>Celengan</item>
+        <item>Wadah Bumbu Dapur</item>
+        <item>Keranjang Sampah</item>
+        <item>Logam Lembaran</item>
+        <item>Tas Belanja</item>
+        <item>Sarung Bantal</item>
+        <item>Pita Rambut</item>
     </string-array>
 
     <string-array name="desc_anorganik">
         <item>Kompos</item>
         <item>Tambahan Pakan Ternak </item>
+        <item>Tambahan Pakan Ternak </item>
+        <item>Tambahan Pakan Ternak </item>
+        <item>Tambahan Pakan Ternak </item>
+        <item>Tambahan Pakan Ternak </item>
+        <item>Tambahan Pakan Ternak </item>
+        <item>Tambahan Pakan Ternak </item>
+        <item>Tambahan Pakan Ternak </item>
+        <item>Tambahan Pakan Ternak </item>
     </string-array>
 
     <string-array name="img_anorganik">
-        <item>@drawable/s_pembakar_sampah</item>
-        <item>@drawable/s_pembakar_sampah</item>
+        <item>@drawable/s_pot</item>
+        <item>@drawable/s_semprot</item>
+        <item>@drawable/s_pensil</item>
+        <item>@drawable/s_celengan</item>
+        <item>@drawable/s_bumbu</item>
+        <item>@drawable/s_keranjang</item>
+        <item>@drawable/s_plat</item>
+        <item>@drawable/s_tas</item>
+        <item>@drawable/s_sarung</item>
+        <item>@drawable/s_pita</item>
     </string-array>
 
     //KERTAS
     <string-array name="saran_kertas">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
+        <item>Tisu Toilet</item>
+        <item>Tempat Tisu</item>
+        <item>Berbagai Kerajinan</item>
     </string-array>
 
     <string-array name="desc_kertas">
         <item>Kompos</item>
         <item>Tambahan Pakan Ternak </item>
+        <item>Tambahan Pakan Ternak </item>
     </string-array>
 
     <string-array name="img_kertas">
-        <item>@drawable/s_pembakar_sampah</item>
-        <item>@drawable/s_pembakar_sampah</item>
+        <item>@drawable/s_tisu</item>
+        <item>@drawable/s_kotak</item>
+        <item>@drawable/s_kerajinan</item>
     </string-array>
 
     //B3

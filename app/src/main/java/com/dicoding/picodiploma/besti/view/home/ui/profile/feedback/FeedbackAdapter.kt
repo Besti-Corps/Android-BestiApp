@@ -18,17 +18,23 @@ class FeedbackAdapter : RecyclerView.Adapter<FeedbackAdapter.NoteViewHolder>() {
         this.listNotes.addAll(listNotes)
         diffResult.dispatchUpdatesTo(this)
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
-        val binding = ItemFeedbackBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            ItemFeedbackBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return NoteViewHolder(binding)
     }
+
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         holder.bind(listNotes[position])
     }
+
     override fun getItemCount(): Int {
         return listNotes.size
     }
-    inner class NoteViewHolder(private val binding: ItemFeedbackBinding) : RecyclerView.ViewHolder(binding.root) {
+
+    inner class NoteViewHolder(private val binding: ItemFeedbackBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(feedback: Feedback) {
             with(binding) {
                 tvItemTitle.text = feedback.name

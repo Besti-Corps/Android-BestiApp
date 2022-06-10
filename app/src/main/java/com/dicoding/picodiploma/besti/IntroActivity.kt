@@ -2,10 +2,10 @@ package com.dicoding.picodiploma.besti
 
 import android.content.Intent
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.picodiploma.besti.databinding.ActivityIntroBinding
 import com.dicoding.picodiploma.besti.view.home.HomeActivity
 import com.dicoding.picodiploma.besti.view.login.LoginActivity
@@ -20,7 +20,7 @@ class IntroActivity : AppCompatActivity() {
         binding = ActivityIntroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button.setOnClickListener{
+        binding.button.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
 

@@ -6,10 +6,12 @@ import androidx.lifecycle.ViewModelProvider
 import com.dicoding.picodiploma.besti.view.home.ui.profile.feedback.FeedbackViewModel
 import com.dicoding.picodiploma.besti.view.home.ui.profile.feedback.ListFeedbackViewModel
 
-class ViewModelFactorys private constructor(private val mApplication: Application) : ViewModelProvider.NewInstanceFactory() {
+class ViewModelFactorys private constructor(private val mApplication: Application) :
+    ViewModelProvider.NewInstanceFactory() {
     companion object {
         @Volatile
         private var INSTANCE: ViewModelFactorys? = null
+
         @JvmStatic
         fun getInstance(application: Application): ViewModelFactorys {
             if (INSTANCE == null) {

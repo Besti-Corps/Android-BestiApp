@@ -3,11 +3,11 @@ package com.dicoding.picodiploma.besti.view.login
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.trimmedLength
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -30,23 +30,27 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val actionbar =supportActionBar
+        val actionbar = supportActionBar
         actionbar!!.hide()
 
-        binding.daftardulu.setOnClickListener{
+        binding.daftardulu.setOnClickListener {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
 
         preferenceHelper = PreferenceHelper(this)
 
-        loginViewModel = ViewModelProvider(this,
-            ViewModelProvider.NewInstanceFactory()).get(LoginViewModel::class.java)
+        loginViewModel = ViewModelProvider(
+            this,
+            ViewModelProvider.NewInstanceFactory()
+        ).get(LoginViewModel::class.java)
 
         loginViewModel.getLoginResponse().observe(this, Observer<LoginResponse> {
             if (it != null) {
-                Toast.makeText(applicationContext,
+                Toast.makeText(
+                    applicationContext,
                     "kamu telah login",
-                    Toast.LENGTH_LONG).show()
+                    Toast.LENGTH_LONG
+                ).show()
                 val tokenUser = (it.data.token)
 
                 preferenceHelper.put(PREF_TOKEN, tokenUser)
@@ -107,13 +111,15 @@ class LoginActivity : AppCompatActivity() {
         val login = ObjectAnimator.ofFloat(binding.loginButton, View.ALPHA, 1f).setDuration(200)
 
         AnimatorSet().apply {
-            playSequentially(title,
+            playSequentially(
+                title,
                 message,
                 emailTextView,
                 emailEditTextLayout,
                 passwordTextView,
                 passwordEditTextLayout,
-                login)
+                login
+            )
             startDelay = 100
         }.start()
     }

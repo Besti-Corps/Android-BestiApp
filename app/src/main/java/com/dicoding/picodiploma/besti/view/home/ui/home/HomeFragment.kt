@@ -17,7 +17,6 @@ import com.dicoding.picodiploma.besti.PreferenceHelper
 import com.dicoding.picodiploma.besti.R
 import com.dicoding.picodiploma.besti.databinding.FragmentHomeBinding
 import com.dicoding.picodiploma.besti.dataclass.InfoResponse
-import java.util.ArrayList
 
 class HomeFragment : Fragment() {
 
@@ -41,15 +40,15 @@ class HomeFragment : Fragment() {
 
         homeViewModel.setInfo(preferenceHelper.getString(PreferenceHelper.PREF_TOKEN).toString())
 
-        homeViewModel.getInfoResponse().observe(viewLifecycleOwner, Observer <InfoResponse>{
-            if(it != null){
+        homeViewModel.getInfoResponse().observe(viewLifecycleOwner, Observer<InfoResponse> {
+            if (it != null) {
                 Toast.makeText(context, it.status, Toast.LENGTH_LONG).show()
                 val tvName: TextView = requireActivity().findViewById(R.id.tv_username)
                 val tvId: TextView = requireActivity().findViewById(R.id.tv_description)
                 tvName.text = "Nama : " + it.data.name
                 tvId.text = "ID : " + it.data.id.toString()
             }
-            if(it == null){
+            if (it == null) {
                 Toast.makeText(context, "Failed to create User", Toast.LENGTH_LONG).show()
             }
         })
@@ -80,7 +79,12 @@ class HomeFragment : Fragment() {
             val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
             val listHero = ArrayList<Berita>()
             for (i in dataName.indices) {
-                val berita = Berita(dataName[i],dataDescription[i], dataPhotoVector.getResourceId(i, -1), dataPhoto.getResourceId(i, -1))
+                val berita = Berita(
+                    dataName[i],
+                    dataDescription[i],
+                    dataPhotoVector.getResourceId(i, -1),
+                    dataPhoto.getResourceId(i, -1)
+                )
                 listHero.add(berita)
             }
             return listHero

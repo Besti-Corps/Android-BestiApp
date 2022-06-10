@@ -6,15 +6,15 @@ import android.content.SharedPreferences
 class PreferenceHelper(context: Context) {
 
     private val prefName = "DatabaseDicodingStory"
-    private val sharedPref : SharedPreferences
-    val editor : SharedPreferences.Editor
+    private val sharedPref: SharedPreferences
+    val editor: SharedPreferences.Editor
 
-    init{
-        sharedPref = context.getSharedPreferences(prefName, Context.MODE_PRIVATE )
+    init {
+        sharedPref = context.getSharedPreferences(prefName, Context.MODE_PRIVATE)
         editor = sharedPref.edit()
     }
 
-    fun put(key: String, value: String){
+    fun put(key: String, value: String) {
         editor.putString(key, value)
             .apply()
     }
@@ -23,7 +23,7 @@ class PreferenceHelper(context: Context) {
         return sharedPref.getString(key, null)
     }
 
-    fun put(key: String, value: Boolean){
+    fun put(key: String, value: Boolean) {
         editor.putBoolean(key, value)
             .apply()
     }
@@ -32,12 +32,12 @@ class PreferenceHelper(context: Context) {
         return sharedPref.getBoolean(key, false)
     }
 
-    fun clear(){
+    fun clear() {
         editor.clear()
             .apply()
     }
 
-    companion object{
+    companion object {
         const val PREF_TOKEN = "TOKEN"
         const val STATE_KEY = "STATE KEY"
         const val TYPE = "TYPE"

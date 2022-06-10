@@ -3,8 +3,8 @@ package com.dicoding.picodiploma.besti.view.signup
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.dicoding.picodiploma.besti.dataclass.RegisterResponse
 import com.dicoding.picodiploma.besti.api.Retrofit
+import com.dicoding.picodiploma.besti.dataclass.RegisterResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -17,7 +17,14 @@ class SignUpViewModel : ViewModel() {
         return signupUser
     }
 
-    fun register(name: String, profession: String, gender: String, phone: String,  email: String, password: String) {
+    fun register(
+        name: String,
+        profession: String,
+        gender: String,
+        phone: String,
+        email: String,
+        password: String
+    ) {
         Retrofit.apiService
             .registerRequest(name, profession, gender, phone, email, password)
             .enqueue(object : Callback<RegisterResponse> {
@@ -29,8 +36,7 @@ class SignUpViewModel : ViewModel() {
                         signupUser.postValue(response.body())
                         val user = response.body()
                         Log.e("message", user!!.status)
-                    }
-                    else {
+                    } else {
                         signupUser.postValue(response.body())
                         val fail = response.body()
                         Log.e("message", fail?.status.toString())
