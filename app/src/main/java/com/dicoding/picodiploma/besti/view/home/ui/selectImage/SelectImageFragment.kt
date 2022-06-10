@@ -4,7 +4,6 @@ import android.Manifest
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,30 +12,25 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.dicoding.picodiploma.besti.api.Retrofit
+import com.dicoding.picodiploma.besti.PreferenceHelper
+import com.dicoding.picodiploma.besti.PreferenceHelper.Companion.ACCURACY
+import com.dicoding.picodiploma.besti.PreferenceHelper.Companion.LABEL
+import com.dicoding.picodiploma.besti.PreferenceHelper.Companion.TYPE
 import com.dicoding.picodiploma.besti.databinding.FragmentSelectImageBinding
-import com.dicoding.picodiploma.besti.dataclass.DataPredict
-import com.dicoding.picodiploma.besti.dataclass.PredictionResponse
 import com.dicoding.picodiploma.besti.reduceFileImage
 import com.dicoding.picodiploma.besti.rotateBitmap
 import com.dicoding.picodiploma.besti.view.camera.CameraActivity
-import com.dicoding.picodiploma.besti.view.home.ui.home.HomeViewModel
 import com.dicoding.picodiploma.besti.view.result.ResultActivity
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import java.io.File
-import java.io.Serializable
 
 class SelectImageFragment : Fragment() {
 
     private var _binding: FragmentSelectImageBinding? = null
+    private lateinit var preferenceHelper: PreferenceHelper
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -67,6 +61,8 @@ class SelectImageFragment : Fragment() {
 //        val selectImageViewModel =
 //            ViewModelProvider(this).get(SelectImageViewModel::class.java)
 
+        preferenceHelper = PreferenceHelper(requireContext())
+
         _binding = FragmentSelectImageBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
@@ -82,8 +78,6 @@ class SelectImageFragment : Fragment() {
 
         _binding!!.next.setOnClickListener {
             uploadImage()
-            val intent = Intent(activity, ResultActivity::class.java)
-            startActivity(intent)
         }
         return root
     }
@@ -100,14 +94,19 @@ class SelectImageFragment : Fragment() {
             )
 
             viewModel.setImage(imageMultipart)
-            viewModel.getPredict().observe(viewLifecycleOwner, Observer<ArrayList<DataPredict>> {
+            viewModel.getPredict().observe(viewLifecycleOwner, Observer {
                 if (it != null) {
+                    val accuracy = it.predict
+                    val type = it.type
+                    val label = it.predict
+                    preferenceHelper.put(ACCURACY, accuracy[0].accuracy.toString())
+                    preferenceHelper.put(TYPE, type)
+                    preferenceHelper.put(LABEL, label[0].label)
+                    Toast.makeText(activity, "ACCURACY" + preferenceHelper.getString(ACCURACY), Toast.LENGTH_SHORT).show()
                     val intent = Intent(activity, ResultActivity::class.java)
-                    intent.putExtra("EXTRA_DATA", it)
                     startActivity(intent)
                 }
             })
-
 
         } else {
             Toast.makeText(activity, "Silakan masukkan berkas gambar terlebih dahulu.", Toast.LENGTH_SHORT).show()
