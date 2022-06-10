@@ -36,8 +36,8 @@
     <string name="dummy_point">+5</string>
     <string name="point">Point Earned:</string>
     <string name="dummy_category">Anorganic</string>
-    <string name="category">Type of Trash</string>
-    <string name="dummy_result">Plastic 97%</string>
+    <string name="category">Type of Trash :</string>
+    <string name="dummy_result">Plastic</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="keluar">LogOut</string>
@@ -62,6 +62,7 @@
     <string name="judul_saran">Judul saran</string>
     <string name="buat_sendiri_yuk">Do It Yourself!!</string>
     <string name="hasil_deteksi">Detection Result</string>
+    <string name="dummy_accuracy">97%</string>
 
     <string-array name="data_judul_berita">
         <item>Polluting the air, South Jakarta Sub-dept. of Environment Takes Action on Garbage Burners</item>

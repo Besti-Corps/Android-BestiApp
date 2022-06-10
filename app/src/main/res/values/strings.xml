@@ -36,8 +36,8 @@
     <string name="dummy_point">+5</string>
     <string name="point">Point Diperoleh:</string>
     <string name="dummy_category">Anorganik</string>
-    <string name="category">Jenis Sampah</string>
-    <string name="dummy_result">Plastik 97%</string>
+    <string name="category">Jenis Sampah :</string>
+    <string name="dummy_result">Plastik</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="keluar">Keluar</string>
@@ -62,6 +62,7 @@
     <string name="judul_saran">Judul saran</string>
     <string name="buat_sendiri_yuk">Buat Sendiri Yuk!!</string>
     <string name="hasil_deteksi">Hasil Deteksi</string>
+    <string name="dummy_accuracy">97%</string>
 
     //ORGANIK
     <string-array name="saran_organik">
@@ -75,6 +76,7 @@
     </string-array>
 
     <integer-array name="img_organik">
+        <item>@drawable/s_pembakar_sampah</item>
         <item>@drawable/s_pembakar_sampah</item>
     </integer-array>
 
@@ -90,8 +92,8 @@
     </string-array>
 
     <string-array name="img_anorganik">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
+        <item>@drawable/s_pembakar_sampah</item>
+        <item>@drawable/s_pembakar_sampah</item>
     </string-array>
 
     //KERTAS
@@ -106,8 +108,8 @@
     </string-array>
 
     <string-array name="img_kertas">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
+        <item>@drawable/s_pembakar_sampah</item>
+        <item>@drawable/s_pembakar_sampah</item>
     </string-array>
 
     //B3
@@ -122,8 +124,8 @@
     </string-array>
 
     <string-array name="img_B3">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
+        <item>@drawable/s_pembakar_sampah</item>
+        <item>@drawable/s_pembakar_sampah</item>
     </string-array>
 
     //RESIDU
@@ -138,8 +140,8 @@
     </string-array>
 
     <string-array name="img_residu">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
+        <item>@drawable/s_pembakar_sampah</item>
+        <item>@drawable/s_pembakar_sampah</item>
     </string-array>
 
 

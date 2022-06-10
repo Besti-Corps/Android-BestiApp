@@ -12,18 +12,19 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.LiveData
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.picodiploma.besti.api.Retrofit
 import com.dicoding.picodiploma.besti.databinding.FragmentSelectImageBinding
+import com.dicoding.picodiploma.besti.dataclass.DataPredict
 import com.dicoding.picodiploma.besti.dataclass.PredictionResponse
-import com.dicoding.picodiploma.besti.dataclass.dataPredict
 import com.dicoding.picodiploma.besti.reduceFileImage
 import com.dicoding.picodiploma.besti.rotateBitmap
-import com.dicoding.picodiploma.besti.view.result.ResultActivity
 import com.dicoding.picodiploma.besti.view.camera.CameraActivity
+import com.dicoding.picodiploma.besti.view.home.ui.home.HomeViewModel
+import com.dicoding.picodiploma.besti.view.result.ResultActivity
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
@@ -31,6 +32,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
+import java.io.Serializable
 
 class SelectImageFragment : Fragment() {
 
@@ -40,7 +42,8 @@ class SelectImageFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-    private var getFile: File? = null
+    var getFile: File? = null
+    private val viewModel: SelectImageViewModel by viewModels()
 
     companion object {
         const val CAMERA_X_RESULT = 200
@@ -61,8 +64,8 @@ class SelectImageFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-        val selectImageViewModel =
-            ViewModelProvider(this).get(SelectImageViewModel::class.java)
+//        val selectImageViewModel =
+//            ViewModelProvider(this).get(SelectImageViewModel::class.java)
 
         _binding = FragmentSelectImageBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -77,7 +80,11 @@ class SelectImageFragment : Fragment() {
             startCameraX()
         }
 
-        _binding!!.next.setOnClickListener {uploadImage()}
+        _binding!!.next.setOnClickListener {
+            uploadImage()
+            val intent = Intent(activity, ResultActivity::class.java)
+            startActivity(intent)
+        }
         return root
     }
 
@@ -92,40 +99,15 @@ class SelectImageFragment : Fragment() {
                 requestImageFile
             )
 
-            val predictImage = MutableLiveData<ArrayList<dataPredict>>()
-
-            fun getPredict(): LiveData<ArrayList<dataPredict>> {
-                return  predictImage
-            }
-
-            getPredict().observe(viewLifecycleOwner, Observer<ArrayList<dataPredict>> {
+            viewModel.setImage(imageMultipart)
+            viewModel.getPredict().observe(viewLifecycleOwner, Observer<DataPredict> {
                 if (it != null) {
-                    startActivity(Intent(activity, ResultActivity::class.java))
+                    val intent = Intent(activity, ResultActivity::class.java)
+                    startActivity(intent)
                 }
             })
 
-            val service = Retrofit.apiService.predict(imageMultipart)
 
-            service.enqueue(object : Callback<PredictionResponse> {
-                override fun onResponse(
-                    call: Call<PredictionResponse>,
-                    response: Response<PredictionResponse>
-                ) {
-                    if (response.isSuccessful) {
-                        val responseBody = response.body()
-                        if (responseBody != null ) {
-                            Toast.makeText(activity, responseBody.status, Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(activity, ResultActivity::class.java))
-                        }
-                    } else {
-                        Toast.makeText(activity, response.message(), Toast.LENGTH_SHORT).show()
-                    }
-                }
-                override fun onFailure(call: Call<PredictionResponse>, t: Throwable) {
-                    Log.e("Failure", t.message.toString())
-                    Toast.makeText(activity, "Gagal instance Retrofit", Toast.LENGTH_SHORT).show()
-                }
-            })
         } else {
             Toast.makeText(activity, "Silakan masukkan berkas gambar terlebih dahulu.", Toast.LENGTH_SHORT).show()
         }

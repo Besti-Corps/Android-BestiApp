@@ -1,13 +1,48 @@
 package com.dicoding.picodiploma.besti.view.home.ui.selectImage
 
-import androidx.lifecycle.LiveData
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.dicoding.picodiploma.besti.api.Retrofit
+import com.dicoding.picodiploma.besti.dataclass.DataPredict
+import com.dicoding.picodiploma.besti.dataclass.PredictionResponse
+import okhttp3.MultipartBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class SelectImageViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+    val predictImage = MutableLiveData<DataPredict>()
+
+    fun getPredict(): MutableLiveData<DataPredict> {
+        return predictImage
     }
-    val text: LiveData<String> = _text
+
+    fun setImage(file: MultipartBody.Part) {
+        Retrofit.apiService
+            .predict(file)
+            .enqueue(object : Callback<PredictionResponse> {
+                override fun onResponse(
+                    call: Call<PredictionResponse>,
+                    response: Response<PredictionResponse>
+                ) {
+                    if (response.isSuccessful) {
+                        val responseBody = response.body()
+                        if (responseBody != null) {
+                            predictImage.postValue(response.body()!!.predict)
+                            Log.e("message", responseBody.status)
+                        }
+                    } else {
+                        predictImage.postValue(response.body()!!.predict)
+                        val responseBody = response.body()
+                        responseBody?.status?.let { Log.e("message", it) }
+                    }
+                }
+
+                override fun onFailure(call: Call<PredictionResponse>, t: Throwable) {
+                    Log.e("Failure", t.message.toString())
+                }
+            })
+    }
 }
