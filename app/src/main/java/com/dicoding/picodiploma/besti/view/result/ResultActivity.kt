@@ -2,9 +2,12 @@ package com.dicoding.picodiploma.besti.view.result
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.dicoding.picodiploma.besti.PreferenceHelper
 import com.dicoding.picodiploma.besti.R
 import com.dicoding.picodiploma.besti.databinding.ActivityResultBinding
 import com.dicoding.picodiploma.besti.dataclass.DataPredict
@@ -13,22 +16,26 @@ import com.dicoding.picodiploma.besti.view.home.ui.home.HomeFragment
 
 
 class ResultActivity : AppCompatActivity() {
-    companion object {
-        const val EXTRA_IMAGE = "0"
-        const val EXTRA_LABEL = "extra_label"
-        const val EXTRA_ACCURACY = "extra_accuracy"
-        const val EXTRA_TYPE = "extra_type"
-    }
 
     private lateinit var binding: ActivityResultBinding
     private lateinit var rvSaran: Saran
     private lateinit var adapter: ListSaranAdapter
     private val list = ArrayList<Saran>()
+    private lateinit var preferenceHelper: PreferenceHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        preferenceHelper = PreferenceHelper(this)
+
+        //Glide.with(applicationContext)
+          //  .load()
+          //  .into(findViewById(R.id.imgCategory))
+        findViewById<TextView>(R.id.tv_label).text = preferenceHelper.getString(PreferenceHelper.LABEL)
+        findViewById<TextView>(R.id.tv_accuracy).text = preferenceHelper.getString(PreferenceHelper.ACCURACY) + "%"
+        findViewById<TextView>(R.id.tv_type).text = preferenceHelper.getString(PreferenceHelper.TYPE)
 
 
         binding.apply {
@@ -41,7 +48,6 @@ class ResultActivity : AppCompatActivity() {
         }
 
         binding.btnDone.setOnClickListener{
-
             finish()
         }
 
