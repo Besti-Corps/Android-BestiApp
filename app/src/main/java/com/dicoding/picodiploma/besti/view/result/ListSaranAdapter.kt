@@ -20,12 +20,14 @@ class ListSaranAdapter(private val listSaran: ArrayList<Saran>) :
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgPhoto: ImageView = itemView.findViewById(R.id.img_saran)
         var tvName: TextView = itemView.findViewById(R.id.tv_name_saran)
+        var tvDesc: TextView = itemView.findViewById(R.id.tv_item_description)
         fun bind(saran: Saran) {
             Glide.with(itemView.context)
                 .load(saran.photo)
                 .circleCrop()
                 .into(imgPhoto)
             tvName.text = saran.name
+            tvDesc.text = saran.description
 
             itemView.setOnClickListener {
                 val intent = Intent(itemView.context, DetailSaranActivity::class.java)
@@ -35,7 +37,8 @@ class ListSaranAdapter(private val listSaran: ArrayList<Saran>) :
                     ActivityOptionsCompat.makeSceneTransitionAnimation(
                         itemView.context as Activity,
                         Pair(imgPhoto, "profile"),
-                        Pair(tvName, "name")
+                        Pair(tvName, "name"),
+                        Pair(tvDesc, "description")
                     )
                 itemView.context.startActivity(intent, optionsCompat.toBundle())
             }

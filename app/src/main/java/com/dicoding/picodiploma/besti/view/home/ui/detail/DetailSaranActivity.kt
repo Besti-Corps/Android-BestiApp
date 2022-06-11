@@ -19,8 +19,8 @@ class DetailSaranActivity : AppCompatActivity() {
         val saran = intent.getParcelableExtra<Saran>("Saran") as Saran
         Glide.with(this)
             .load(saran.photo)
-            .into(findViewById(R.id.img_saran))
-        findViewById<TextView>(R.id.tv_name_saran).text = saran.name
+            .into(findViewById(R.id.imgSaran))
+        findViewById<TextView>(R.id.tvSaran).text = saran.name
         findViewById<TextView>(R.id.tvDescSaran).text = saran.description
     }
 }
