@@ -12,9 +12,9 @@
     <string name="desc_intro_4">By recycling non-biodegradable waste, this can help us save the earth.</string>
     <string name="start_now">Let\'s start</string>
     <string name="imageView">Image View</string>
-    <string name="title_login_page" translatable="false">BesTi (Bebas Sampah Setiap Hari!)</string>
-    <string name="message_login_page" translatable="false">Enter your data first!</string>
-    <string name="email" translatable="false">Email</string>
+    <string name="title_login_page" translatable="true">BesTi (Bebas Sampah Setiap Hari!)</string>
+    <string name="message_login_page" translatable="true">Enter your data first!</string>
+    <string name="email" translatable="true">Email</string>
     <string name="password">Password</string>
     <string name="copyright">\@ 2022 BesTi</string>
     <string name="login">Login</string>
@@ -80,6 +80,16 @@
     <string name="yes">Ya</string>
     <string name="deleted">Satu item berhasil dihapus</string>
     <string name="no">Tidak</string>
+
+    <string name="title">Title</string>
+    <string name="write_your_review_here">Write your review here...</string>
+    <string name="review">Review</string>
+    <string name="send">Send</string>
+
+    <string name="capture">Capture</string>
+    <string name="switchC">Switch Camera</string>
+    <string name="PhotoNews">Photo News</string>
+    <string name="photodeteksi">"Photo Detection "</string>
 
     <string-array name="data_judul_berita">
         <item>Polluting the air, South Jakarta Sub-dept. of Environment Takes Action on Garbage Burners</item>

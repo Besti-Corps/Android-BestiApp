@@ -44,9 +44,9 @@ class HomeFragment : Fragment() {
             if (it != null) {
                 Toast.makeText(context, it.status, Toast.LENGTH_LONG).show()
                 val tvName: TextView = requireActivity().findViewById(R.id.tv_username)
-                val tvId: TextView = requireActivity().findViewById(R.id.tv_description)
+                val tvPhone: TextView = requireActivity().findViewById(R.id.tv_description)
                 tvName.text = "Nama : " + it.data.name
-                tvId.text = "ID : " + it.data.id.toString()
+                tvPhone.text = "Phone : " + it.data.phone
             }
             if (it == null) {
                 Toast.makeText(context, "Failed to create User", Toast.LENGTH_LONG).show()

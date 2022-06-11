@@ -48,4 +48,16 @@ interface API {
         @Field("password") password: String,
     ): Call<UpdateResponse>
 
+    @GET("review")
+    fun getReview(
+        @Header("Authorization") authToken: String,
+    ): Call<GetReviewResponse>
+
+    @FormUrlEncoded
+    @POST("review")
+    fun postReview(
+        @Header("Authorization") authToken: String,
+        @Field("comment") comment: String,
+    ): Call<PostReviewResponse>
+
 }

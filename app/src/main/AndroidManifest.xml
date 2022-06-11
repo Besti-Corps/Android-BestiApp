@@ -22,13 +22,10 @@
         android:theme="@style/Theme.BesTi"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".view.home.ui.profile.review.ReviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.home.ui.detail.DetailSaranActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.home.ui.profile.feedback.ListFeedbackActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.home.ui.profile.feedback.FeedbackActivity"
             android:exported="false" />
         <activity
             android:name=".view.setting.theme.ThemeActivity"

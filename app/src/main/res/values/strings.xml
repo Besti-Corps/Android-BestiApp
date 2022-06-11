@@ -190,6 +190,14 @@
     <string name="yes">Ya</string>
     <string name="deleted">Satu item berhasil dihapus</string>
     <string name="no">Tidak</string>
+    <string name="title">Judul</string>
+    <string name="write_your_review_here">Write your review here...</string>
+    <string name="review">Review</string>
+    <string name="send">Kirim</string>
+    <string name="capture">Capture</string>
+    <string name="switchC">Switch Camera</string>
+    <string name="PhotoNews">Photo News</string>
+    <string name="photodeteksi">"Photo Deteksi "</string>
 
     <string-array name="data_judul_berita">
         <item>Bikin Udara Tercemar, Pembakar Sampah di Jaksel Ditindak Sudin LH</item>

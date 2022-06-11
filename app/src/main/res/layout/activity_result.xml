@@ -47,7 +47,8 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/rect2"
         app:layout_constraintStart_toStartOf="@+id/materialTextView"
-        app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView"
+        android:contentDescription="@string/photodeteksi"/>
 
     <TextView
         android:id="@+id/tv_label"

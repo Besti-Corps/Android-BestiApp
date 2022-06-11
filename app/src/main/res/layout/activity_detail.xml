@@ -7,7 +7,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".view.home.ui.detail.DetailActivity">
 
         <ImageView
@@ -21,7 +21,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/s_sampah_dikali" />
+            tools:srcCompat="@drawable/s_sampah_dikali"
+            android:contentDescription="@string/PhotoNews"/>
 
         <TextView
             android:id="@+id/nameTextView"
