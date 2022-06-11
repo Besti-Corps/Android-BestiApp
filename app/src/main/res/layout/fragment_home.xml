@@ -37,13 +37,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/iv_user"
                 app:layout_constraintTop_toTopOf="@+id/iv_user"
-                android:layout_marginTop="27dp"
+                android:layout_marginTop="25dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_toEndOf="@id/iv_user"
                 tools:text="@string/Gusti"
+                android:fontFamily="@font/poppins"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -59,7 +60,8 @@
                 android:layout_marginTop="8dp"
                 android:ellipsize="end"
                 android:maxLines="5"
-                tools:text="@string/id" />
+                tools:text="@string/id"
+                android:fontFamily="@font/poppins"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -73,18 +75,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/BeritaTerbaru" />
-
-    <TextView
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/card_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/Selengkapnya" />
+        android:text="@string/BeritaTerbaru"
+        android:fontFamily="@font/poppins"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_heroes"

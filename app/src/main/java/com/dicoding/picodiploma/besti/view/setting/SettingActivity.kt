@@ -16,6 +16,7 @@ class SettingActivity : AppCompatActivity() {
         binding = ActivitySettingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
 
         binding.btnDone.setOnClickListener {
             startActivity(Intent(this, ThemeActivity::class.java))

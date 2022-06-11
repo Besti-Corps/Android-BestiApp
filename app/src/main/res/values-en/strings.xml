@@ -90,6 +90,7 @@
     <string name="switchC">Switch Camera</string>
     <string name="PhotoNews">Photo News</string>
     <string name="photodeteksi">"Photo Detection "</string>
+    <string name="akun">Don\'t Have Account?</string>
 
     <string-array name="data_judul_berita">
         <item>Polluting the air, South Jakarta Sub-dept. of Environment Takes Action on Garbage Burners</item>

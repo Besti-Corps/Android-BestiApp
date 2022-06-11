@@ -18,7 +18,7 @@
     <string name="password">Password</string>
     <string name="copyright">\@ 2022 BesTi</string>
     <string name="login">Masuk</string>
-    <string name="daftar">Buat Akun Baru</string>
+    <string name="daftar">Daftar</string>
     <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
     <string name="name">Name</string>
     <string name="signup">Daftar</string>
@@ -198,6 +198,7 @@
     <string name="switchC">Switch Camera</string>
     <string name="PhotoNews">Photo News</string>
     <string name="photodeteksi">"Photo Deteksi "</string>
+    <string name="akun">Belum Punya Akun?</string>
 
     <string-array name="data_judul_berita">
         <item>Bikin Udara Tercemar, Pembakar Sampah di Jaksel Ditindak Sudin LH</item>

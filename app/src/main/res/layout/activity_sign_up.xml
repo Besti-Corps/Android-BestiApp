@@ -25,23 +25,6 @@
             app:srcCompat="@drawable/logo_judul_rmv" />
 
         <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
-            android:alpha="0"
-            android:text="@string/title_signup_page"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal" />
-
-        <TextView
             android:id="@+id/nameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,9 +32,10 @@
             android:layout_marginTop="8dp"
             android:alpha="0"
             android:text="@string/name"
+            android:fontFamily="@font/poppins"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nameEditTextLayout"
@@ -89,6 +73,7 @@
             android:layout_marginTop="16dp"
             android:alpha="0"
             android:text="@string/profession"
+            android:fontFamily="@font/poppins"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nameEditTextLayout" />
@@ -128,6 +113,7 @@
             android:layout_marginTop="8dp"
             android:alpha="0"
             android:text="@string/gender"
+            android:fontFamily="@font/poppins"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/professionEditTextLayout" />
@@ -168,6 +154,7 @@
             android:alpha="0"
             android:text="@string/phone"
             android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/genderEditTextLayout" />
 
@@ -207,6 +194,7 @@
             android:alpha="0"
             android:text="@string/email"
             android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/phoneEditTextLayout" />
 
@@ -246,6 +234,7 @@
             android:alpha="0"
             android:text="@string/password"
             android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout" />
 

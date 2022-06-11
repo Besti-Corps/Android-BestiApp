@@ -96,10 +96,10 @@ class LoginActivity : AppCompatActivity() {
             repeatCount = ObjectAnimator.INFINITE
             repeatMode = ObjectAnimator.REVERSE
         }.start()
-
-        val title = ObjectAnimator.ofFloat(binding.titleTextView, View.ALPHA, 1f).setDuration(200)
-        val message =
-            ObjectAnimator.ofFloat(binding.messageTextView, View.ALPHA, 1f).setDuration(200)
+        val daftar =
+            ObjectAnimator.ofFloat(binding.daftardulu, View.ALPHA, 1f).setDuration(200)
+        val daftar1 =
+            ObjectAnimator.ofFloat(binding.daftardulu1, View.ALPHA, 1f).setDuration(200)
         val emailTextView =
             ObjectAnimator.ofFloat(binding.emailTextView, View.ALPHA, 1f).setDuration(200)
         val emailEditTextLayout =
@@ -112,8 +112,8 @@ class LoginActivity : AppCompatActivity() {
 
         AnimatorSet().apply {
             playSequentially(
-                title,
-                message,
+                daftar,
+                daftar1,
                 emailTextView,
                 emailEditTextLayout,
                 passwordTextView,

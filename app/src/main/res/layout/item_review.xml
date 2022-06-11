@@ -26,6 +26,7 @@
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/poppins_bold"
             tools:text="Username" />
 
         <TextView
@@ -37,6 +38,7 @@
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toBottomOf="@+id/tv_username"
             card_view:layout_constraintVertical_bias="0.0"
+            android:fontFamily="@font/poppins"
             tools:text="Url" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,6 +34,7 @@ class EditProfileActivity : AppCompatActivity() {
         ).get(EditProfilViewModel::class.java)
 
         preferenceHelper = PreferenceHelper(this)
+        supportActionBar?.hide()
 
         editProfilViewModel.setInfo(preferenceHelper.getString(PREF_TOKEN).toString())
 

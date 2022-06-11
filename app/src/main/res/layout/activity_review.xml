@@ -32,14 +32,15 @@
     <ImageView
         android:id="@+id/ivPicture"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:contentDescription="@string/title"
         android:scaleType="centerCrop"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/logo_judul_rmv" />
 
     <TextView
         android:id="@+id/tvReview"
@@ -51,6 +52,7 @@
         android:text="@string/write_your_review_here"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:fontFamily="@font/poppins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivPicture" />
@@ -82,7 +84,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="@string/review" />
+            android:hint="@string/review"
+            android:fontFamily="@font/poppins"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

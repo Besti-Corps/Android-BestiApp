@@ -20,48 +20,17 @@
         app:srcCompat="@drawable/logo_judul_rmv"/>
 
     <TextView
-        android:id="@+id/titleTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:alpha="0"
-        android:text="@string/title_login_page"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal" />
-
-    <TextView
-        android:id="@+id/messageTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:alpha="0"
-        android:text="@string/message_login_page"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
-
-    <TextView
         android:id="@+id/emailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins"
         android:alpha="0"
         android:text="@string/email"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/messageTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailEditTextLayout"
@@ -72,6 +41,7 @@
         android:layout_marginEnd="32dp"
         android:alpha="0"
         app:helperText="*Wajib Diisi"
+        android:fontFamily="@font/poppins"
         app:helperTextTextColor="@color/red_700"
         app:counterEnabled="true"
         app:counterMaxLength="35"
@@ -99,6 +69,7 @@
         android:layout_marginTop="8dp"
         android:alpha="0"
         android:text="@string/password"
+        android:fontFamily="@font/poppins"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout" />
@@ -112,6 +83,7 @@
         android:layout_marginEnd="32dp"
         android:alpha="0"
         app:helperText="*Wajib Diisi"
+        android:fontFamily="@font/poppins"
         app:helperTextTextColor="@color/red_700"
         app:counterEnabled="true"
         app:counterMaxLength="20"
@@ -175,12 +147,27 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/daftardulu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/akun"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintEnd_toStartOf="@id/daftardulu"
+        app:layout_constraintStart_toStartOf="@id/daftardulu"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
+        android:alpha="0"/>
+
+    <TextView
         android:id="@+id/daftardulu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="110dp"
         android:text="@string/daftar"
+        android:fontFamily="@font/poppins_bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginButton" />
+        app:layout_constraintStart_toEndOf="@id/daftardulu1"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
+        android:alpha="0"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

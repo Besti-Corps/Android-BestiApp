@@ -44,6 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:justificationMode="inter_word"
+            android:fontFamily="@font/poppins"
             android:textSize="14sp"
             android:transitionName="description"
             app:layout_constraintBottom_toBottomOf="parent"

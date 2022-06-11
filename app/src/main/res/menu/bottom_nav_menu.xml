@@ -4,16 +4,19 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:title="@string/title_home"
+        android:fontFamily="@font/poppins"/>
 
     <item
         android:id="@+id/navigation_camera"
         android:icon="@drawable/ic_camera"
-        android:title="@string/camera" />
+        android:title="@string/camera"
+        android:fontFamily="@font/poppins"/>
 
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_person"
-        android:title="@string/profile" />
+        android:title="@string/profile"
+        android:fontFamily="@font/poppins"/>
 
 </menu>
