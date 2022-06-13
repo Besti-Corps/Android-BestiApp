@@ -32,11 +32,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageButton
+        style="@style/btn_next"
         android:id="@+id/next"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="64dp"
-        android:backgroundTint="@color/white"
         android:src="@drawable/ic_next"
         app:layout_constraintBottom_toBottomOf="@+id/captureImage"
         app:layout_constraintStart_toEndOf="@+id/captureImage"

@@ -18,7 +18,7 @@
     <string name="password">Password</string>
     <string name="copyright">\@ 2022 BesTi</string>
     <string name="login">Masuk</string>
-    <string name="daftar">Daftar</string>
+    <string name="daftar">Daftar disini</string>
     <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
     <string name="name">Name</string>
     <string name="signup">Daftar</string>
@@ -64,115 +64,6 @@
     <string name="hasil_deteksi">Hasil Deteksi</string>
     <string name="dummy_accuracy">97%</string>
 
-    //ORGANIK
-    <string-array name="saran_organik">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
-    </string-array>
-
-    <string-array name="desc_organik">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
-    </string-array>
-
-    <integer-array name="img_organik">
-        <item>@drawable/s_kompos</item>
-        <item>@drawable/s_pakan</item>
-    </integer-array>
-
-    //ANORGANIK
-    <string-array name="saran_anorganik">
-        <item>Pot Bunga</item>
-        <item>Botol Penyiram Tanaman</item>
-        <item>Penyimpan Alat Tulis</item>
-        <item>Celengan</item>
-        <item>Wadah Bumbu Dapur</item>
-        <item>Keranjang Sampah</item>
-        <item>Logam Lembaran</item>
-        <item>Tas Belanja</item>
-        <item>Sarung Bantal</item>
-        <item>Pita Rambut</item>
-    </string-array>
-
-    <string-array name="desc_anorganik">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
-        <item>Tambahan Pakan Ternak </item>
-        <item>Tambahan Pakan Ternak </item>
-        <item>Tambahan Pakan Ternak </item>
-        <item>Tambahan Pakan Ternak </item>
-        <item>Tambahan Pakan Ternak </item>
-        <item>Tambahan Pakan Ternak </item>
-        <item>Tambahan Pakan Ternak </item>
-        <item>Tambahan Pakan Ternak </item>
-    </string-array>
-
-    <string-array name="img_anorganik">
-        <item>@drawable/s_pot</item>
-        <item>@drawable/s_semprot</item>
-        <item>@drawable/s_pensil</item>
-        <item>@drawable/s_celengan</item>
-        <item>@drawable/s_bumbu</item>
-        <item>@drawable/s_keranjang</item>
-        <item>@drawable/s_plat</item>
-        <item>@drawable/s_tas</item>
-        <item>@drawable/s_sarung</item>
-        <item>@drawable/s_pita</item>
-    </string-array>
-
-    //KERTAS
-    <string-array name="saran_kertas">
-        <item>Tisu Toilet</item>
-        <item>Tempat Tisu</item>
-        <item>Berbagai Kerajinan</item>
-    </string-array>
-
-    <string-array name="desc_kertas">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
-        <item>Tambahan Pakan Ternak </item>
-    </string-array>
-
-    <string-array name="img_kertas">
-        <item>@drawable/s_tisu</item>
-        <item>@drawable/s_kotak</item>
-        <item>@drawable/s_kerajinan</item>
-    </string-array>
-
-    //B3
-    <string-array name="saran_B3">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
-    </string-array>
-
-    <string-array name="desc_B3">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
-    </string-array>
-
-    <string-array name="img_B3">
-        <item>@drawable/s_pembakar_sampah</item>
-        <item>@drawable/s_pembakar_sampah</item>
-    </string-array>
-
-    //RESIDU
-    <string-array name="saran_residu">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
-    </string-array>
-
-    <string-array name="desc_residu">
-        <item>Kompos</item>
-        <item>Tambahan Pakan Ternak </item>
-    </string-array>
-
-    <string-array name="img_residu">
-        <item>@drawable/s_pembakar_sampah</item>
-        <item>@drawable/s_pembakar_sampah</item>
-    </string-array>
-
-
-    //BERITA
 
     <string name="feedback">Feedback</string>
     <string name="change">Ubah</string>
@@ -199,6 +90,512 @@
     <string name="PhotoNews">Photo News</string>
     <string name="photodeteksi">"Photo Deteksi "</string>
     <string name="akun">Belum Punya Akun?</string>
+
+    //ORGANIK
+    <string-array name="saran_organik">
+        <item>Kompos</item>
+        <item>Tambahan Pakan Ternak </item>
+    </string-array>
+
+    <string-array name="desc_organik">
+        <item>Kompos merupakan salah satu jenis pupuk organik yang sudah ada sejak lama.
+            Pengertian kompos adalah bahan-bahan organik yang sudah mengalami proses pelapukan karena terjadi interaksi antara mikroorganisme atau bakteri pembusuk yang bekerja di dalam bahan organik tersebut.\n
+            Bahan organik yang dimaksud pada pengertian kompos adalah rumput, jerami, sisa ranting dan dahan, kotoran hewan, bunga yang rontok, air kencing hewan ternak, serta bahan organik lainnya.
+            Semua bahan organik tersebut akan mengalami pelapukan yang diakibatkan oleh mikroorganisme yang tumbuh subur pada lingkungan lembap dan basah.\n
+            \n
+            Beberapa sampah organik yang dapat diubah menjadi pupuk kompos ini di antaranya ialah:\n
+            - Sampah sisa makanan mulai dari sayur-sayuran hingga daging busuk\n
+            - Kertas bekas maupun tisu yang sudah tak terpakai lagi;\n
+            - Dedaunan serta rumput;\n
+            - Potongan kayu;\n
+            - Bumbu dapur kadaluarsa;\n
+            - Bulu hewan yang rontok;\n
+            - Debu dari belakang lemari es;\n
+            - Hingga kotoran hewan peliharaan.\n
+            \n
+            Ketika memutuskan untuk membuat pupuk kompos, tentu kita membutuhkan alat dan bahan yang tepat.\n
+            Alat Membuat Pupuk Kompos:\n
+            - Wadah berukuran besar dengan penutup (tong atau ember)\n
+            - Sarung tangan\n
+            \n
+            Bahan Membuat Pupuk Kompos\n
+            - Sampah rumah tangga (bisa sisa makanan atau bekas sayuran)\n
+            - Tanah\n
+            - Air secukupnya\n
+            - Arang sekam\n
+            - kapur\n
+            - Cairan pupuk EM4 sebagai tambahan\n
+            \n
+            Langkah Membuat Pupuk Kompos\n
+            - Siapkan sampah rumah tangga yang akan diolah menjadi pupuk kompos.\n
+            - Pisahkan sampah organik (sisa makanan/dedaunan) dengan sampah plastik. Sampah organiklah yang nantinya akan digunakan sebagai pupuk kompos.\n
+            - Siapkan wadah berukuran besar untuk membuat pupuk kompos. Jangan lupa bahwa wadah harus dilengkapi dengan penutup agar pupuk yang dibuat tidak akan terkontaminasi.\n
+            - Masukkan tanah secukupnya ke dalam wadah yang telah diisi dengan sampah organik. Ketebalannya bisa kamu sesuaikan dengan wadah dan banyaknya sampah organik.\n
+            - Siram permukaan tanah tersebut menggunakan air secukupnya.\n
+            - Masukkan sampah organik yang telah dicampur arang sekam(optional) dan kapur pertanian ke dalam wadah.\n
+            - Pastikan sampah disimpan secara merata. Sebisa mungkin ketebalan sampah setara dengan ketebalan tanah\n
+            - siram dengan air yang telah bercampur EM4\n
+            - Masukkan lagi tanah ke dalam wadah. Kali ini tanah berperan sebagai penutup sampah.\n
+            - Tutup wadah dengan rapat dan biarkan sekitar tiga minggu.\n
+            - Perhatikan hal ini saat membuat pupuk kompos sendiri di rumah:\n
+            \n
+            Pastikan wadah pembuat pupuk kompos tidak terkontaminasi oleh air hujan dan hewan.\n
+            - Pastikan juga wadah tak terkena paparan sinar matahari.\n
+            - Kalau semuanya sudah dilakukan, kini kamu bisa langsung menggunakan pupuk organik ini untuk memupuk semua jenis tanaman yang ada dipekarangan rumah.\n
+        </item>
+        <item>Bila sampah organik langsung dikomposkan maka produk yang diperoleh hanya pupuk organik.
+            Namun bila diolah menjadi pakan, sampah tersebut dapat “dilewatkan” ke dalam perut ternak dan dapat menghasilkan daging dan pupuk organik dari kotoran ternak.
+            Dengan demikian nilai tambah yang diperoleh lebih tinggi sekaligus dapat memecahkan pencemaran lingkungan dan mengatasi kekurangan pakan ternak
+            Membuat pakan dari sampah dimulai dengan pemisahan sampah organik dan anorganik, dilanjutkan dengan pencacahan, fermentasi, pengeringan, penepungan, pencampuran, dan pembuatan pelet.
+            Pemisahan sampah organik dari sampah anorganik dimaksudkan agar sampah yang diolah hanya yang dapat dicerna oleh ternak serta menghindarkan ternak dari mengonsumsi bahan-bahan beracun atau yang mengandung logam berat.
+            Pemisahan sebaiknya dapat dilakukan di tingkat produsen sampah (pasar atau rumah tangga).
+            Oleh karena itu, untuk program massal perlu disediakan tempat sampah organik dan anorganik di tingkat produsen sampah.
+            Sampah dari rumah sakit dan pabrik yang banyak mengandung logam berat atau bahan beracun seyogianya dihindari.
+            Sampah organik yang telah terpisah dari bahan lain selanjutnya dicacah dengan alat atau mesin pencacah agar bentuknya lebih kecil dan untuk memudahkan fermentasi.
+            Fermentasi dimaksudkan untuk meningkatkan kandungan gizi dan nilai cerna sampah karena kandungan gizi sampah umumnya rendah tetapi serat kasarnya relatif tinggi.
+            Fermentasi dilakukan dengan menggunakan inokulan bakteri dan cara yang tepat agar diperoleh produk yang bermutu tinggi.
+            Setelah difermentasi, sampah dikeringkan dengan dijemur lalu digiling hingga menjadi tepung.
+            Selanjutnya tepung sampah ditambah bahan lain termasuk enzim dan diaduk dalam mesin pencampur, sehingga diperoleh pakan komplit yang sesuai dengan kebutuhan ternak.
+            Apabila diperlukan, semua bahan yang sudah tercampur dibentuk pelet. Pelet pakan ternak dapat disimpan hingga 6 bulan.
+            Idealnya ransum komplit diberikan sekitar 3% dari bobot hidup ternak per hari. Dengan jumlah pakan tersebut, sapi tidak lagi memerlukan HMT atau rumput.
+            Namun sebagian petani ternyata masih memberikan rumput.
+            Sebagai contoh, jika ternak diberi pakan komplit 1,5% dari bobot hidup per hari, peternak tinggal memberi rumput 50% dari kebutuhan semestinya.</item>
+    </string-array>
+
+    <integer-array name="img_organik">
+        <item>@drawable/s_kompos</item>
+        <item>@drawable/s_pakan</item>
+    </integer-array>
+
+    //ANORGANIK
+    <string-array name="saran_anorganik">
+        <item>Pot Bunga</item>
+        <item>Botol Penyiram Tanaman</item>
+        <item>Penyimpan Alat Tulis</item>
+        <item>Celengan</item>
+        <item>Wadah Bumbu Dapur</item>
+        <item>Keranjang Sampah</item>
+        <item>Logam Lembaran</item>
+        <item>Tas Belanja</item>
+        <item>Sarung Bantal</item>
+        <item>Pita Rambut</item>
+    </string-array>
+
+    <string-array name="desc_anorganik">
+        <item>Alat dan Bahan:\n
+            - Botol bekas ukuran 2 liter\n
+            - Spidol biasa\n
+            - Spidol permanen\n
+            - Paint pen\n
+            - Pisau cutter\n
+            - Gunting\n
+            - Cat akrilik\n
+            - Kuas\n
+            - Tanah untuk di dalam pot\n
+            - Tanaman kecil untuk di dalam pot\n
+            \n
+            Cara Membuat Pot Bunga Lucu dari Botol Bekas:\n
+            1. Lepaskan plastik label pada botol. Lalu bersihkan terlebih dahulu bagian lengketnya.\n
+            2. Gambar pola bentuk hewan atau bunga sesuai keinginan menggunakan spidol biasa.\n
+            3. Potong dan bentuk botol sesuai pola menggunakan gunting. Pada bagian yang sulit dipotong dan dibentuk gunakan pisau cutter agar lebih rapi.\n
+            4. Buat lubang kecil tempat resapan air dengan cutter pada bagian bawah botol plastik.\n
+            5. Setelah bentuknya dibuat dan sudah rapi, maka hapus tanda pola yang sudah dibuat menggunakan spidol biasa tadi.\n
+            6. Warnai botol yang sudah dibentuk itu menggunakan cat akrilik. Disarankan mewarnai dengan warna dasar dulu. Misalnya putih, kuning, dan pink polos.\n
+            7. Biarkan hingga kering terlebih dahulu.\n
+            8. Jika kamu sudah memastikan warna dasarnya telah kering, gambar wajah dengan paint pen dan spidol permanen.\n
+            9. Setelah selesai digambar, diamkan lagi dan tunggu sampai kering.\n
+            10. Ketika sudah kering, masukkan tanah dan tanaman ke dalam pot.
+        </item>
+        <item>
+            Cara terbaik memanfaatkan botol plastik bekas adalah dengan menjadikannya sebagi alat penyiram tanaman.
+            Caranya cukup mudah yaitu dengan mengganti tutup botol dengan kepala pompa yang memang khusus digunakan untuk alat penyemprot.
+            Kepala pompa untuk penyemprot tanaman dapat dengan mudah kita jumpai di toko pertanian, toko bangunan dan banyak marketplace online.
+        </item>
+        <item>Cara membuat tempat pensil dari botol bekas yang sederhana tentunya sangat mudah untuk dipraktikkan.
+            Bahkan, bahan utamanya hanyalah botol plastik bekas air mineral saja.
+            Bahan-bahan lainnya pun juga cukup mudah kamu dapatkan dan tentunya akan selalu ada di rumah.\n
+            Cara membuat tempat pensil dari botol bekas ini semua bahannya menggunakan bahan bekas yang didaur ulang.
+            Selain mudah, menerapkan cara membuat tempat pensil dari botol bekas ini tentunya tidak akan menguras isi dompet kamu.
+            Bagi kamu yang ingin mengikuti cara membuat tempat pensil dari botol bekas sederhana ini, kamu bisa menyiapkan dan mengikuti langkah-langkahnya.\n
+            \n
+            Bahan-bahan dan alat yang dibutuhkan:\n
+            - Botol air mineral bekas\n
+            - Selotip bening\n
+            - Gunting\n
+            \n
+            Cara membuat tempat pensil dari botol bekas yang sederhana:\n
+            - Bersihkan botol bekas terlebih dahulu\n
+            - Lepaskan label air mineral yang terdapat pada botol (Namun, jika kamu ingin menggunakannya untuk dekorasi botol, kamu bisa mengaturnya sendiri)\n
+            - Lalu, potong bagian atas botol, tetapi jangan dibuang terlebih dahulu karena bagian atas botol juga akan digunakan\n
+            - Masukkan semua alat tulis, seperti pensil, bolpen, pensil warna, dan lain-lain ke dalam botol\n
+            - Selanjutnya, beri selotip di tepi botol untuk menempelkan bagian atas botol yang tadi digunting, nantinya tempat pensil ini akan dapat dibuka dan ditutup dengan mudah\n
+            - Tempat pensil sederhana siap untuk digunakan atau dipajang di rumah maupun kantor\n
+            \n
+            Karena bagian luar botol bekas masih kosong, kamu juga bisa menambahkan berbagai dekorasi sesuai keinginan.
+            Kamu bisa memberi warna, menambahkan kertas untuk digambar, dan dekorasi-dekorasi lainnya.
+        </item>
+        <item>Celengan adalah tempat untuk menabung uang secara mandiri. Biasanya celengan dijual dalam berbagai bentuk, desain, motif dan warna dengan harga yang bervariasi.
+            Mengajarkan konsep hemat sangat penting bagi anak-anak usia dini. Hal ini dikarenakan agar mereka mengerti bahwa menabung merupakan salah satu cara untuk menghargai diri, sehingga diharapkan nantinya mereka akan terbiasa menghemat uang.\n
+            Agar lebih hemat lagi, Anda tidak harus membeli celengan yang sudah jadi. Anda bisa membuatnya sendiri dengan memanfaatkan barang bekas, seperti kaleng, botol plastik, kardus susu, karton bekas, kertas kado hingga kardus sepatu.
+            Cara membuat celengan dari bahan bekas ini pun begitu mudah, hanya membutuhkan waktu luang, imajinasi, dan kreativitas.
+            Selanjutnya akan dijelaskan langkah dan panduan cara membuat celengan dari botol bekas. Jadi simak terus artikel ini sampai habis.\n
+            \n
+            Alat dan bahan untuk membuat celengan dari botol plastik, antara lain botol bekas air minuman, kertas kado atau jenis kertas bermotif lainnya, karton putih, isolasi, pisau dan gunting, spidol permanen atau cat hitam, 4 tutup botol dan sekrup.
+            Pertama, cuci botol bekas kemasan minuman sampai bersih. Lalu buatlah lubang memanjang selebar 5 – 7,5 cm di bagian tengah botol untuk memasukkan uang nantinya.
+            Kemudian siapkan kertas karton, kertas kado, serta tutup botol dan sekrup untuk melengkapi hiasannya.
+            Potonglah karton menyerupai bentuk telinga babi, lalu berilah lapisan kertas kado pada permukaannya. Potonglah juga kertas kado selebar keliling botol minuman.
+            Lalu lekatkan bagian-bagian tersebut pada botol untuk mempermanis tampilannya. Tutup botol tambahan beserta sekrup digunakan untuk membuat kaki babi.
+            Tempatkan secara proporsional dan simetris di bagian bawah. Dan akhirnya, Anda perlu membuat mata palsu dan lubang hidung dengan menggunakan spidol atau cat hitam.
+        </item>
+        <item>Jika kamu memiliki botol-botol bekas di rumah yang tak terpakai, jangan langsung dibuang!
+            Kamu bisa menggunakan botol-botol tersebut untuk membuat aneka kerajinan tangan seperti tempat bumbu dapur yang serbaguna.
+            Selain dapat diolah menjadi sesuatu yang bermanfaat, secara tak langsung kamu juga telah ikut serta mengurangi limbah botol plastik.
+            Nah, melansir dari kanal Youtube Lista Tsurayya, Kamis (1/7/2021), berikut ini cara membuat tempat bumbu dapur dari botol plastik yang ringkas dan mudah.
+            Bahan dan peralatan yang dibutuhkan antara lain:\n
+            - Botol minum ukuran 1,5 liter\n
+            - Silet atau gunting kecil\n
+            - Kain flanel\n
+            - Lem tembak\n
+            - Kardus\n
+            \n
+            Cara membuat tempat bumbu dapur:\n
+            Pertama, dua botol bekas ukuran 1,5 liter menjadi dua bagian. Di botol pertama potong bagian tengahnya dan di botol kedua potong pada bagian bawahnya atau sekitar 3 cm dari alas botol.
+            Nah, dua buah potongan botol ini disatukan akan membentuk wadah dan tutup botol.\n
+            Kedua, siapkan dua kain flanel berwarna berbeda. Letakkan ukuran flanel yang lebih kecil di bagian atas ukuran kain flanel yang lebih besar. Kemudian rekatkan dengan lem tembak.\n
+            Ketiga, siapkan kain flanel ukuran 2x2 cm lalu bentuk menjadi huruf-huruf untuk nama wadah. Misalnya, gula, garam, lada.
+            Kemudian rekatkan di bagian ukuran kain flanel dengan panjang 26 cm. Berikutnya, setelah nama selesai dibuat, tempelkan ke botol dengan lem.\n
+            \n
+            Nah, setelah selesai membuat tempat bumbu dapur dari botol, kini saatnya membuat wadah tempat bumbu dapur dari kardus agar lebih rapi dan tertata.
+            Siapkan kardus berbentuk oval dengan ukuran 31 x 15 cm dan kardus berbentuk persegi panjang dengan ukuran lebar 2,5 cm.
+            Selanjutnya, tekuk kardus lebar 2,5 cm hingga membentuk setengah lingkaran lalu rekatkan di seluruh pinggiran kardus berukuran 31x15cm.
+            Pada bagian bawah kardus, alasi dengan kain flanel ukuran sama yakni 31 x 15 cm. Sedangkan pada pinggiran kardus, alasi dengan kain flanel lebar 7,5 ccm hingga mengelilingi semua bagian kardus.
+            Jika merasa kurang menarik, kamu bisa menghiasinya dengan aneka manik-manik atau kancing. Nah, kini wadah dan tempat bumbu dapur sudah bisa digunakan.
+        </item>
+        <item>Siapkan beberapa botol plastik yang akan di gunakan banyak sedikitnya botol yang di gunakan akan menentukan besar kecilnya ukuran daerah sampah yang akan di buat.
+            setelah semua botol terkumpul ada baiknya di basuh dan di bersihkan dahulu sebelum masuk dalam proses pembuatan dan setelah di basuh jangan lupa di keringkan ya mampu dengan cara di jemur dan di tiriskan air yang masuk dalam botol.
+            Setelah botol bersih dan kering lanjutkan ke proses menyatukan botol-botol plastiknya. Untuk proses menyatukan botol mampu dengan cara di lem dengan lem tembak mampu juga  di eratkan dengan kawat
+        </item>
+        <item>Daur ulang adalah sebuah upaya terbaik untuk mengolah limbah menjadi sesuatu yang bisa kembali dimanfaatkan bahkan berharga.
+            Melalui daur ulang, limbah tak hanya menjadi limbah yang menumpuk dan memperparah kondisi lingkungan. Salah satu limbah terbanyak di bumi ini adalah limbah logam.
+            Apalagi sejak era teknologi berkembang pesat. Beruntungnya logam adalah termasuk limbah yang paling mudah untuk didaur ulang, sehingga bisa kembali digunakan sebagai material yang bermanfaat.
+            Namun masih sedikit orang yang mengetahui bagaimana proses daur ulang logam dan apa hasil akhirnya, sehingga di negara-negara berkembang masih banyak warga yang tidak melakukan pemilahan sampah.
+            Pemilihan sampah berdasarkan jenis bahan atau material sangat berguna untuk memudahkan proses daur ulang. Tahapan utama dari proses daur ulang logam adalah sebagai berikut:\n\n
+            Proses pengumpulan\n
+            Proses pengumpulan jenis logam yang berbeda dengan pengumpulan limbah bahan lain karena nilai jualnya yang sangat tinggi.
+            Maka dari itu banyak orang yang memilih untuk menjual limbah logam ke para pengepul daripada langsung membuangnya ke tempat pembuangan sampah.
+            Di Indonesia mudah sekali menemukan pengepul besi semacam ini.
+            Sumber terbesar logam besi tua di Amerika Serikat adalah dari kendaraan bekas. Jenis logam lainnya yang menjadi pemasok utamanya termasuk rel kereta, struktur konstruksi baja besar,
+            konstruksi kapal, hingga alat pertanian, sampai peralatan rumah tangga.
+            Proses pengumpulan paling efektif dari material logam adalah lewat pengepul, yang mana pengumpulan tersebut berkontribusi lebih dari setengah pasokan limbah logam.\n\n
+            Menyortir logam\n
+            Penyortiran meliputi pemisahan logam yang berasal dari bahan lain yang menempel pada logam.
+            Mengingat yang namanya limbah biasa sudah tercampur dengan material lain. Proses daur ulang  dilakukan secara otomatis.
+            Proses tersebut menggunakan magnet dan sensor dalam membantu pemisahan material ini.
+            Proses penyortiran selain menggunakan magnet bisa dilakukan dengan mengamati warna atau berat  dalam melihat jenis logam dan kandungannya.
+            Contohnya saja untuk jenis alumunium akan muncul warna perak dan beratnya ringan.
+            Begitu juga untuk tembaga, yang biasanya berwarna kuning (untuk jenis kuningan) atau merah untuk tembaga murni.
+            Para penyortir akan meningkatkan nilai material logam dengan cara memisahkan jenis logam bersih dengan material yang kotor.\n\n
+            Menghancurkan logam\n
+            Pemrosesan daur ulang berikutnya adalah logam akan “diparut”. Penghancuran logam dilakukan untuk memudahkan terjadinya peleburan, sebab jika logam diparut menjadi
+            kecil-kecil volume rasio permukaan dan volume-nya akan lebih cepat dilebur.
+            Proses peleburan yang cepat akan sangat menggunakan energi yang relatif lebih sedikit. Terkadang, aluminium tersebut diubah menjadi sebuah lembaran kecil.
+            Kemudian, baja yang ada diubah menjadi balok-balok baja kecil yang lebih kecil.\n\n
+            Mencairkan logam\n
+            Scrap logam kemudian akan dilebur dalam sebuah tungku besar. Logam yang akan dicairkan dibawa pada tungku besar yang dirancang khusus untuk melelehkan logam.
+            Sebagian besar energi atau bahan bakar digunakan dalam proses pencairan. Akan tetapi, energi yang diperlukan untuk melelehkan dan proses mendaur ulang
+            logam lebih sedikit dibandingkan energi yang  diperlukan dalam proses produksi logam yang menggunakan bahan secara murni. Bila dilihat dari ukuran tungkunya,
+            tingkatan suhu panas tungku maupun volume logam, peleburan dapat berlangsung dari beberapa menit saja daripada proses pembuatan awalnya. Sangat menguntungkan bukan proses daur ulang ini?\n\n
+            Pemurnian\n
+            Pemurnian dilakukan untuk memastikan produk akhir berkualitas tinggi dan bebas dari kontaminan material lain. Salah satu metode yang paling umum digunakan untuk pemurnian adalah Elektrolisis.\n\n
+            Memadatkan\n
+            Setelah dilakukan proses pemurnian, logam yang meleleh akan dibawa untuk proses pendinginan hingga proses pemadatan logam.
+            Dalam proses ini, potongan logam akan dibentuk menjadi bentuk tertentu seperti batang yang nantinya dapat dengan mudah digunakan untuk produksi berbagai kebutuhan produk logam.
+            Proses berikutnya setelah pendinginan adalah logam akan dipadatkan, dan dibentuk sehingga logam siap digunakan.
+            Logam hasil daur ulang ini kemudian akan dibawa ke berbagai pusat industi di mana logam akan digunakan sebagai bahan baku dan untuk proses produksi yang baru.\n\n
+            Hasil daur ulang\n
+            Seperti yang telah disinggung di atas, hasil dari daur ulang bisa dibentuk menjadi logam batangan atau lembaran yang siap digunakan kembali sebagai material produk.
+            Ketika produk yang terbuat dari batang logam daur ulang tersebut berakhir pada akhir masa pakainya, proses daur ulang logam bisa diputar kembali.
+            Itu artinya material logam bisa terus menerus digunakan. Ketersediaan logam daur ulang yang tinggi, akan sangat bermanfaat dalam pembuatan baja yang akan menghemat energi dan menjaga lingkungan.
+        </item>
+        <item>Bahan dan Alat:\n
+            - Kain Perca Warna-warni\n
+            - 1/2 meter kain blacu\n
+            - 1/2 kain flanel motif yang akan digunakan untuk bagian dalam\n
+            - Benang jahit warna merah dan jarum\n
+            - Mesin jahit, kalau tidak punya bisa menjahit menggunakan tangan\n
+            \n
+            Cara Membuat Tas Jinjing dari Kain Perca\n
+            - Carilah dulu ide model tas jinjing yang akan kamu buat. Jangan lupa digambar biar nanti mudah untuk membautnya.\n
+            - Potong kain perca menjadi ukuran yang sama, setelah itu gabungkan satu demi satu. Kamu bisa memotong kain perca menjadi bentuk persegi atau segitiga, sesuai keinginan kamu saja.
+            Tapi, usahakan antara kain perca memiliki warna yang kontras, agar tas terlihat unik.\n
+            - Kemudian buatlah tas dari kain blacu. Potong kain blacu dengan lebar 50 cm dan panjangnya 100 cm.
+            Jahit kain sampai membentuk kantong dengan ukuran 50×50 cm, jangan lupa rapikan bekas jahitannya ya.\n
+            - Lalu, pasangkan bagian dalam tas yang terbuat dari kain flanel motif. Cukup potong kain flanel sesuai ukuran, kemudian jahit pada bagian yang sudah kamu buat.\n
+            - Selanjutnya buat tali untuk tas nya, potong 2 helai kain blacu dengan ukuran panjang 100 cm dan lebar 10 cm. Setelah itu jahit dan sambungkan pada bagian tas yang pertama.\n
+            - Setelah tas mulai terbentuk, kamu tinggal mengaplikasikan kain perca pada bagian luar tas.\n
+            - Tas jinjing dari kain perca sudah jadi deh.
+        </item>
+        <item>Kreasi dari bahan kain perca saat ini mulai digemari dan banyak peminatnya karena barang-barang hasil kerajinan tangan (hand made) biasanya memiliki model yang tidak sama dan harganya terjangkau.
+            Salah satu barang yang dapat anda buat dari kain perca adalah sarung bantal. Cara membuatnya pun tidak sulit.
+            Siapkan terlebih dahulu alat dan bahan di bawah ini.\n
+                1. Kain perca (potongan kain)\n
+                2. Meteran\n
+                3. Jarum pentul\n
+                4. Busa angin\n
+                5. Kain renda\n
+                6. Mesin jahit\n
+            \n
+                Setelah semua alat-alat tersebut telah tersedia, perhatikan langkah-langkah berikut untuk membuat sarung bantal dari kain perca.\n
+                1. Langkah pertama adalah gunting empat macam kain dari motif yang berbeda motif dengan ukuran 20 cm X 20 cm menjadi 8 lembar buah kain (jadi 2 lembar kain dengan motif yang sama)\n
+
+                2. Selanjutnya, anda gunting busa angin dengan ukuran 40 cm X 40 cm sebanyak 2 lembar\n
+
+                3. Kemudian, gunting renda sepanjang 40 cm sebanyak 4 helai.\n
+
+                4. Setelah itu, jahit 4 buah kain katun dengan motif yang berbeda menjadi satu lembar kain utuh untuk sarung bantal bagian depan.\n
+
+                5. Setelah itu, ambil 4 buah kain katun yang lain (sisanya) dan jahit menjadi satu lembar kain utuh untuk sarung bantal bagian belakang.\n
+
+                6. Kemudoian, agar jahitan kain pada tiap sambungan terlihat rapi, pasangkan renda pada sambungan tersebut, buat di bagian depan dan belakang sarung bantal.\n
+
+                7. Setelah itu, pasang busa angin pada kain yang telah disatukan menggunakan jarum pentul agar kain dan busa tidak bergeser saat dijahit.\n
+
+                8. Jahit busa angin pada belakang bagian depan dan belakang sarung bantal sebagai pelapis.\n
+
+                9. Setelah busa angin telah terpasang, jahit bagian depan dan belakang sarung bantal menjadi satu, namun sisakan satu sisi (bagian atas) yang tidak di jahit.\n
+
+                10. Sebagai langkah terakhir, anda pasang resleting pad bagian yang tidak dijahit tersebut.\n
+
+                11. Sarung bantal dari kain perca kreasi anda pun sudah selesai dan siap digunakan\n
+        </item>
+        <item>Untuk membuat ikat rambut cantik nyaman dipakai, kita hanya membutuhkan peralatan dan bahan yaitu :\n
+            1. Kain perca satin\n
+            2. Karet elastik\n
+            3. Peniti\n
+            4. Jarum dan benang\n
+            5. Gunting\n
+            6. Lem tembak\n
+\n
+            Cara membuat:\n
+            1. Siapkan jarum, benang, kain perca satin berbentuk persegi panjang. Untuk tali rambut, di sini kain perca yang digunakan berukuran panjang 60 cm dan lebarnya 8 cm.
+            Karet elastik bisa disesuaikan dengan keinginan karena setiap orang memiliki rambut yang berbeda-beda lebat nya.\n
+            2. Langkah berikutnya yaitu persiapan membuat ikat rambut. Lipat kain menjadi dua bertemu sisi panjangnya.
+            Selanjutnya jahit lurus namun jangan dijahit semuanya. Sisakan 4 cm pada kedua ujungnya.
+            Setelah dijahit selanjutnya balikkan kain menggunakan tangan atau dengan sumpit/tusuk sate.\n
+            3. Setelah selesai membalik kain selanjutnya satukan ujung dengan ujung kemudian jahit lurus untuk menggabungkan sehingga terbentuklah ikat rambut melingkar yang menyerupai gelang.\n
+            4. Selanjutnya kita pasang karet elastik. Masukkan karet elastik yang ujungnya dipasang peniti ke dalam kain.
+            Agar karet elastik tidak lepas, sematkan jarum pentul pada salah satu ujung elastik.
+            Dan setelah karet elastik bertemu dengan ujungnya selanjutnya simpulkan elastiknya atau bisa dijahit agar rapi.\n
+            5. Itulah hasilnya. Kain menjadi berkerut dan jadilah ikat rambut biasa. Sampai di sini sebenarnya ikat rambut sudah bisa dipakai.\n
+            6. Langkah selanjutnya buat bunga kanzashi dari kain perca satin juga untuk mempercantik ikat rambut.
+            Setelah itu beri lem tembak dan tempelkan bunga kanzashi pada ikat rambut.
+            Selesai. Ikat rambut cantik dari kain perca satin siap dipakai dan tentunya nyaman, yang memakai juga tampak lebih cantik.
+            </item>
+    </string-array>
+
+    <string-array name="img_anorganik">
+        <item>@drawable/s_pot</item>
+        <item>@drawable/s_semprot</item>
+        <item>@drawable/s_pensil</item>
+        <item>@drawable/s_celengan</item>
+        <item>@drawable/s_bumbu</item>
+        <item>@drawable/s_keranjang</item>
+        <item>@drawable/s_plat</item>
+        <item>@drawable/s_tas</item>
+        <item>@drawable/s_sarung</item>
+        <item>@drawable/s_pita</item>
+    </string-array>
+
+    //KERTAS
+    <string-array name="saran_kertas">
+        <item>Tisu Toilet</item>
+        <item>Tempat Tisu</item>
+        <item>Berbagai Kerajinan</item>
+    </string-array>
+
+    <string-array name="desc_kertas">
+        <item>Alat dan Bahan:\n
+            - Botol bekas ukuran 2 liter\n
+            - Spidol biasa\n
+            - Spidol permanen\n
+            - Paint pen\n
+            - Pisau cutter\n
+            - Gunting\n
+            - Cat akrilik\n
+            - Kuas\n
+            - Tanah untuk di dalam pot\n
+            - Tanaman kecil untuk di dalam pot\n
+            \n
+            Cara Membuat Pot Bunga Lucu dari Botol Bekas:\n
+            1. Lepaskan plastik label pada botol. Lalu bersihkan terlebih dahulu bagian lengketnya.\n
+            2. Gambar pola bentuk hewan atau bunga sesuai keinginan menggunakan spidol biasa.\n
+            3. Potong dan bentuk botol sesuai pola menggunakan gunting. Pada bagian yang sulit dipotong dan dibentuk gunakan pisau cutter agar lebih rapi.\n
+            4. Buat lubang kecil tempat resapan air dengan cutter pada bagian bawah botol plastik.\n
+            5. Setelah bentuknya dibuat dan sudah rapi, maka hapus tanda pola yang sudah dibuat menggunakan spidol biasa tadi.\n
+            6. Warnai botol yang sudah dibentuk itu menggunakan cat akrilik. Disarankan mewarnai dengan warna dasar dulu. Misalnya putih, kuning, dan pink polos.\n
+            7. Biarkan hingga kering terlebih dahulu.\n
+            8. Jika kamu sudah memastikan warna dasarnya telah kering, gambar wajah dengan paint pen dan spidol permanen.\n
+            9. Setelah selesai digambar, diamkan lagi dan tunggu sampai kering.\n
+            10. Ketika sudah kering, masukkan tanah dan tanaman ke dalam pot.
+        </item>
+        <item>Kotak tisu merupakan sebuah benda yang wajib ada baik di meja tamu maupun di dapur.
+            Sebab, benda ini akan memudahkan dalam pengambilan tisu. Saat ini, ada banyak kreasi DIY untuk membuat tempat tisu.
+            Mulai dari kain flanel, karton, stik es krim, hingga kertas kado. Nah, karena topik kali ini adalah tentang memanfaatkan barang bekas, maka tutorialnya khusus akan membahas cara membuat tempat tisu dari kardus dan kertas kado.
+            Selain memudahkan pengambilan tisu, penggunaan tempat tisu DIY akan membuat tampilan tisu jadi semakin cantik. Penasaran dengan cara membuatnya? Yuk, simak selengkapnya di bawah ini!\n
+            \n
+            Alat dan Bahan\n
+            Sebelum mengikuti langkah-langkah cara membuat tempat tisu dari kardus dan kertas kado, Anda bisa terlebih dahulu mempersiapkan semua alat dan bahan yang dibutuhkan.
+            Pastinya, Anda bisa membuatnya dari bahan-bahan yang mudah ditemukan di sekitar. Bahkan, bahan-bahan ini bisa jadi hanya menumpuk di gudang karena sudah tidak terpakai lagi.
+            Nah, ketimbang menerka-nerka, langsung saja, berikut beberapa alat dan bahannya :\n
+            - Kardus bekas sepatu\n
+            - Kertas kado polos hitam\n
+            - Duble tape\n
+            - Gunting\n
+            - Spidol putih (usahakan yang permanen)\n
+            - Styrofoam\n
+            - Lem Tembak\n
+            \n
+            Mudah sekali, kan, bahan-bahannya? Jika sudah siap, kita masuk ke step by step-nya, ya!\n
+            Cara Membuat Tempat Tisu dari Kardus dan Kertas Kado\n
+            Baiklah, setelah semua bahan dipersiapkan, mari segera buat tempat tisunya. Nah, pastikan Anda mengikuti langkah-langkahnya secara runut. Ini dia tutorial lengkapnya!\n
+
+            1. Langkah Pertama : Melapisi Kardus dengan Kertas Kado Hitam\n
+            Jadi, langkah pertama yang harus Anda lakukan dalam cara membuat tempat tisu dari kardus dan kertas kado adalah melapisi kardus menggunakan kertas kado berwarna hitam. Pastikan Anda melapisinya dengan sempurna tanpa ada bagian yang tertinggal.
+            Gunakan lem kertas dengan takaran yang pas. Jangan terlalu banyak karena bisa membuat kertas jadi tampak kusam dan tidak rapi. Jangan terlalu sedikit juga karena mengakibatkan kertas kado tidak dapat menempel dengan baik. Selain itu, bisa menyebabkannya mudah rusak.
+            \n
+            2. Langkah Kedua : Buat Kaki Box\n
+            Untuk membuat kaki box, Anda bisa menggunakan bahan berupa Styrofoam. Bahan ini bisa Anda potong berbentuk persegi panjang sebanyak tiga atau empat buah. Kemudian, lapisi menggunakan kertas kado hitam agar warnanya menjadi serasi.
+            Jika sudah, rekatkan menggunakan lem tembak pada bagian bawah kotak. Pastikan Anda merekatkannya dengan baik sehingga bisa menyangga kardus secara sempurna. Anda juga perlu merekatkan pada bagian samping kardus. maksudnya, kardus berbentuk balok, dimana Anda meletakkan penyangganya pada bagian panjang x tingginya. Sebab, bagian panjang x lebar nantinya akan digunakan untuk tempat keluarnya tisu.
+            \n
+            3. Langkah Ketiga : Buat Pola Gambar Mata dan Mulut\n
+            Setelah diberikan penyangga, buat pola gambar mata dan mulut pada bagian panjang x lebarnya. Pastikan letak mulutnya tepat pada tempat dimana tisu akan keluar. Anda dapat menggambar pola wajah menggunakan spidol berwarna putih.
+            \n
+            4. Langkah Keempat : Lubangi Bagian Mulut\n
+            Cara membuat tempat tisu dari kardus dan kertas kado yang selanjutnya adalah melubangi bagian mulut yang telah Anda gambar sebelumnya. Gunakan cutter dan lakukan perlahan-lahan agar hasilnya rapi dan tidak mengenai bagian lainnya. Pastikan Anda melubangi bagian ini dengan panjang yang pas dengan ukuran keluarnya tisu dari wadah plastiknya. Dengan begitu, akan semakin memudahkan pengambilan tisunya.
+            \n
+            5. Langkah Kelima : Masukkan Tisu dan Gunakan\n
+            Langkah terakhir yang dapat Anda lakukan adalah dengan memasukkan tisu yang akan digunakan. Jika sudah dimasukkan, maka silakan gunakan sesuai dengan kebutuhan. Nah, ingat juga, ya, gunakan tisu sesuai dengan kebutuhan. Sebab, tisu terbuat dari kayu dan pepohonan, jadi, semakin hemat menggunakan tisu, artinya, Anda semakin mengurangi penebangan pohon. Lingkungan pun akan semakin sehat dan seimbang.
+            Bagaimana? Mudah sekali kan? Silakan berkreasi sesuai dengan kreativitas masing-masing. Anda juga bisa mengganti kertas kadonya dengan yang bermotif. Silakan gunakan imajinasi untuk membuat sesuatu yang lebih menarik.
+        </item>
+        <item>Kertas tidak perlu pengolahan khusus seperti limbah organik lainnya. Dengan demikian, limbah kertas dapat diproses kembali menjadi berbagai kerajinan tangan yang menarik.
+            Kertas dapat dimanfaatkan menjadi kerajinan unik yang memiliki nilai seni dan ekonomi yang tinggi. Teknik daur ulang yang berbeda dapat menciptakan kerajinan yang berbeda pula.
+            Kerajinan daur ulang limbah kertas di antaranya sebagai berikut: \n
+            - Vas bunga \n
+            - Sandal \n
+            - Wadah serbaguna \n
+            - Bunga hias \n
+            - Hiasan dinding \n
+            - Taplak \n
+            - Boneka manusia atau hewan \n
+            - Wadah tisu \n
+            \n
+            Teknik Membuat Kerajinan dari Limbah Kertas \n
+            Langkah awal untuk membuat kerajinan adalah memilah kertas.
+            Pemilahan dilakukan untuk memilih jenis kertas yang sesuai dengan rencana pembuatan produk kerajinan.
+            Selain pemilahan, perlu juga mempersiapkan bahan-bahan pendukung seperti lem, pewarna, dan alat-alat untuk membuat kerajinan.
+            Alat-alat yang sering digunakan, antara lain gunting, pemotong, kuas, sumpit, stik kayu, dan tusuk gigi. Setelah itu, kertas dapat diproses menjadi kerajinan tangan melalui teknik-teknik sederhana.
+            Berdasarkan penjelasan dari Modul Prakarya dan Kewirausahaan kelas XI (2020), teknik-teknik pengolahan kertas di antaranya adalah teknik sobek, teknik lipat atau origami, teknik gulung atau pilin, dan teknik bubur.
+            Misalnya, untuk membuat bunga kertas diperlukan teknik lipat dan gulung. Teknik yang sama dapat digunakan untuk membuat kerajinan lainnya, seperti sandal dan wadah tisu.
+            Sifat kertas yang mudah dibentuk itu tidak menutup munculnya teknik alternatif yang lain. Teknik pengerjaan yang unik dapat menjadi nilai lebih dari sebuah kerajinan tangan dari limbah kertas.
+        </item>
+    </string-array>
+
+    <string-array name="img_kertas">
+        <item>@drawable/s_tisu</item>
+        <item>@drawable/s_kotak</item>
+        <item>@drawable/s_kerajinan</item>
+    </string-array>
+
+    //B3
+    <string-array name="saran_B3">
+        <item>Lampion Botol Kaca Bekas</item>
+        <item>Meja dengan Mozaik Kaca</item>
+        <item>Hiasan Natal 3 Dimensi dari Kaca</item>
+        <item>Hiasan Gantung dari Kaca</item>
+        <item>Mozaik Kaca</item>
+        <item>Pecahan Kaca untuk Bingkai Cermin</item>
+    </string-array>
+
+    <string-array name="desc_B3">
+        <item>
+            Apabila memiliki botol bekas yang sudah tidak terpakai alangkah baiknya bila dimanfaatkan kembali menjadi kerajinan agar lebih bernilai,
+            misalnya memanfaatkan menjadi lampion. Selain botol tersebut menjadi lebih cantik juga dapat unik dan bisa digunakan sebagai hiasan rumah.
+            Terutama bila sang pemilik rumah senang melukis, bisa menambahkan lukisan pada botol tersebut agar lebih menarik.
+            Disamping itu, lampion botol kaca pun bisa digunakan sebagai pengganti pencahayaan untuk menghasilkan cahaya remang-remang yang lembut.
+            Menciptakan lampion ini memang memerlukan kreativitas yang cukup tinggi.
+            Selain harus paham instalasi listrik, hiasan botol pun harus dibuat menarik dengan cat warna-warni untuk menghasilkan hiasan botol yang unik.
+            Maka dari itu, membutuhkan kabel yang panjangnya dapat disesuaikan dengan ukuran rumah, beberapa buah cat warna-warni, dan juga tambahan glitter.
+            Mulailah menghias botol kaca dengan cat tersebut sesuai dengan kreasi yang diinginkan.
+        </item>
+        <item>
+            Potongan kaca pun bisa menghasilkan karya seni yang tinggi.
+            Terbukti beberapa potongan kaca tersebut bila disusun pada meja akan memberikan nilai estetika yang tinggi.
+            Seperti yang terlihat pada gambar tersebut, meja polos yang dihiasi dengan potongan kaca dengan warna yang sama membuat meja
+            tersebut jauh lebih menarik dibandingkan dengan meja polos.
+            Membuat meja dengan hiasan potongan kaca tersebut membutuhkan campuran kimia resin dan katalis.
+            Dengan demikian, potongan kaca tersebut akan menempel menyerupai dengan lem.
+            Dengan demikian, akan menghasilkan potongan kaca seperti di dalam sebuah kaca.
+            Pastinya potongan kaca tersebut tidak akan melukai tangan karena telah terlindungi oleh cairan kimia tersebut.
+        </item>
+        <item>
+            Disamping lebih ekonomis, membuat kerajinan dari kaca untuk menyambut Natal membuat hiasan tersebut terkesan lebih unik dan berbeda dari umumnya.
+            Hiasan Natal tersebut akan tampak lebih elegan karena terbuat dari manik-manik kaca yang sepintas menyerupai kristal.
+            Dengan demikian, akan banyak orang yang menganggap bahwa hiasan tersebut terbuat dari kristal.
+            Membuat hiasan Natal seperti ini, cukup memerlukan kaca yang telah dipecahkan dalam bentuk yang lebih kecil, potongan kaca tersebut disusun hingga membentuk hiasan Natal.
+            Untuk menyusunnya diperlukan kawat kecil yang telah dibentuk menjadi sebuah lingkaran.
+            Tidak lupa juga sediakan cat minyak dengan warna yang lembut lengkap dengan mesin penyemprot cat.
+        </item>
+        <item>
+            Beberapa rumah di Indonesia senang memasang hiasan gantung di depan rumah.
+            Terlebih jika hiasan tersebut tertiup angin yang dapat mengeluarkan suara nyaring.
+            Terlepas dari itu, hiasan gantung tersebut memiliki mitos tersendiri di kalangan masyarakat Indonesia.
+            Hiasan gantung dipercayai dapat mendatangkan kesuksesan untuk pemilik rumah.
+            Terlepas dari mitos tersebut, membuat kerajinan dari kaca untuk dibuat sebagai hiasan gantung akan mempercantik tampilan rumah.
+            Terlebih bila kaca yang digunakan terbuat dari bola-bola kaca berwarna-warni.
+            Tentunya akan memancarkan kemilau yang indah bila sinar matahari menerpanya.
+        </item>
+        <item>
+            Kerajinan dari kaca kali ini terbuat dari potongan kaca berbagai warna dan ukuran.
+            Dengan demikian, kaca tersebut akan membentuk mozaik yang indah.
+            Mozaik tersebut sangat cocok bila dipasang di dinding. Terlebih bila pandai memadu padankan berbagai warna kaca yang akan digunakan untuk mozaik tersebut.
+            Bila ingin membuat mozaik dari kaca, sebaiknya untuk menggunakan pecahan kaca yang berukuran kecil agar mudah ditata untuk dibuat sebagai mozaik.
+            Maka dari itu, sebaiknya menggunakan kaca dari bahan yang sudah tidak dipakai, seperti dari botol kaca bekas.
+            Botol tersebut dipecahkan namun jangan sampai terlalu hancur.
+        </item>
+        <item>
+            Bila memiliki cermin di rumah yang polos tanpa memiliki bingkai,cobalah untuk menambahkan bingkai pada cermin tersebut dengan bingkai yang dikreasikan sendiri.
+            Kali ini, bisa menambahkan kepingan kaca yang dihiaskan pada pinggiran cermin tersebut.
+            Gunakan lem khusus agar pinggiran cermin tersebut lebih kuat dan kepingan kaca tidak mudah terlepas.
+            Setelah dihias dengan kepingan kaca yang membentuk bingkai pada cermin tersebut, cermin pun bisa digunakan sebagai hiasan rumah tanpa mengesampingkan fungsinya.
+            Cara membuat aksesoris tersebut membutuhkan jenis kaca yang berukuran lebih tebal sehingga mudah untuk dibentuk.
+            Kali ini akan membahas aksesoris yang berupa gelang. Gelang dari kaca merupakan salah satu kerajinan tangan yang diperuntukkan untuk wanita.
+            Untuk membuat gelang tersebut membutuhkan tali khusus gelang serta kaca yang telah dibentuk menyerupai bebatuan aksesoris.
+        </item>
+    </string-array>
+
+    <string-array name="img_B3">
+        <item>@drawable/s_lampion</item>
+        <item>@drawable/s_meja_mozaik</item>
+        <item>@drawable/s_natal3d</item>
+        <item>@drawable/s_gantungan</item>
+        <item>@drawable/s_mozaik</item>
+        <item>@drawable/s_bingkai_cermin</item>
+    </string-array>
+
+    //RESIDU
+    <string-array name="saran_residu">
+        <item>Kurangi penggunaan sampah residu</item>
+    </string-array>
+
+    <string-array name="desc_residu">
+        <item>Sampah residu sulit di daur ulang</item>
+    </string-array>
+
+    <string-array name="img_residu">
+        <item>@drawable/s_residu</item>
+    </string-array>
+
+    //BERITA
 
     <string-array name="data_judul_berita">
         <item>Bikin Udara Tercemar, Pembakar Sampah di Jaksel Ditindak Sudin LH</item>

@@ -11,8 +11,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayout"
+        app:layout_constraintStart_toStartOf="@+id/btnSend"
         app:layout_constraintTop_toBottomOf="@+id/btnSend">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -33,26 +33,26 @@
         android:id="@+id/ivPicture"
         android:layout_width="0dp"
         android:layout_height="100dp"
+        android:layout_marginTop="64dp"
         android:contentDescription="@string/title"
         android:scaleType="centerCrop"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
         app:srcCompat="@drawable/logo_judul_rmv" />
 
     <TextView
         android:id="@+id/tvReview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
         android:text="@string/write_your_review_here"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:fontFamily="@font/poppins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivPicture" />
@@ -74,7 +74,9 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvReview">
@@ -84,8 +86,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="@string/review"
-            android:fontFamily="@font/poppins"/>
+            android:fontFamily="@font/poppins"
+            android:hint="@string/review" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

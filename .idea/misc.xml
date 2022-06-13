@@ -11,44 +11,46 @@
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/BesTi/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/BesTi/app/src/main/res/layout/activity_splash_screen.xml" value="0.13858695652173914" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/BesTi/app/src/main/res/layout/activity_spolash_screen.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/drawable-v24/ic_add.xml" value="0.137" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/drawable-v24/ic_clear.xml" value="0.137" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/drawable-v24/rect.xml" value="0.2415" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/drawable-v24/rect4.xml" value="0.1725" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/drawable/ic_camera.xml" value="0.2415" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1385" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/drawable/ic_gallery.xml" value="0.1385" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/drawable/ic_next.xml" value="0.2415" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1385" />
         <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_camera.xml" value="0.17889492753623187" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_detail.xml" value="0.171875" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_detail_saran.xml" value="0.128125" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_edit_profile.xml" value="0.128125" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_feedback.xml" value="0.2" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_home.xml" value="0.16354166666666667" />
         <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_intro.xml" value="0.1" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_list_feedback.xml" value="0.1265625" />
         <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_profile.xml" value="0.17889492753623187" />
         <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_result.xml" value="0.17889492753623187" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_review.xml" value="0.264" />
         <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_select_image.xml" value="0.17889492753623187" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_setting.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.171875" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/activity_theme.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/fragment_camera.xml" value="0.1" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.16354166666666667" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/fragment_home.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/fragment_profile.xml" value="0.176" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/fragment_select_image.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/item_berita.xml" value="0.16354166666666667" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/item_feedback.xml" value="0.1265625" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/item_review.xml" value="0.2" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/layout/item_saran.xml" value="0.128125" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16354166666666667" />
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Android-BestiApp/app/src/main/res/menu/menu_form.xml" value="0.1265625" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable-v24/ic_circle_24.xml" value="0.387" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable-v24/ic_circle_full_24.xml" value="0.387" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable/ic_camera.xml" value="0.379" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable/ic_capture.xml" value="0.315" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable/ic_gallery.xml" value="0.387" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable/ic_lock.xml" value="0.387" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable/ic_next.xml" value="0.387" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable/ic_person.xml" value="0.387" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable/ic_phone.xml" value="0.387" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable/ic_place_holder.xml" value="0.379" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/drawable/ic_switch_camera.xml" value="0.387" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_camera.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_detail.xml" value="0.23219814241486067" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_detail_saran.xml" value="0.21680216802168023" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_edit_profile.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_home.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_intro.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_login.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_main.xml" value="0.18819655521783182" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_result.xml" value="0.33" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_review.xml" value="0.33" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_select_image.xml" value="0.33" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_setting.xml" value="0.2015625" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/activity_theme.xml" value="0.2015625" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/fragment_camera.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/fragment_home.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/fragment_profile.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/fragment_select_image.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/item_berita.xml" value="0.3117206982543641" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/item_feedback.xml" value="0.20153985507246377" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/layout/item_saran.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/dhani/AndroidStudioProjects/Android-BestiApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.387" />
       </map>
     </option>
   </component>

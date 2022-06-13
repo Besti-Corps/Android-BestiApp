@@ -35,12 +35,12 @@ class SignUpActivity : AppCompatActivity() {
 
         signUpViewModel.getRegisterResponse().observe(this, Observer<RegisterResponse> {
             if (it != null) {
-                Toast.makeText(applicationContext, it.status, Toast.LENGTH_LONG).show()
+//                Toast.makeText(applicationContext, it.status, Toast.LENGTH_LONG).show()
                 startActivity(Intent(this, LoginActivity::class.java))
             }
             if (it == null) {
-                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG)
-                    .show()
+//                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG)
+//                    .show()
             }
         })
 

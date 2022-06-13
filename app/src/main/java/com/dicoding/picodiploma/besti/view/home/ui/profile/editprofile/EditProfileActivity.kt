@@ -46,22 +46,22 @@ class EditProfileActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.genderEditText).text = it.data.gender
                 findViewById<TextView>(R.id.phoneEditText).text = it.data.phone
                 findViewById<TextView>(R.id.emailEditText).text = it.data.email
-                findViewById<TextView>(R.id.passwordEditText).text = "*********"
+                findViewById<TextView>(R.id.passwordEditText).text = ""
             }
             if (it == null) {
-                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG)
-                    .show()
+//                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG)
+//                    .show()
             }
         })
 
         editProfilViewModel.getUpdateResponse().observe(this, Observer<UpdateResponse> {
             if (it != null) {
-                Toast.makeText(applicationContext, it.status, Toast.LENGTH_LONG).show()
+//                Toast.makeText(applicationContext, it.status, Toast.LENGTH_LONG).show()
                 startActivity(Intent(this, HomeActivity::class.java))
             }
             if (it == null) {
-                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG)
-                    .show()
+//                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG)
+//                    .show()
             }
         })
 
@@ -76,36 +76,36 @@ class EditProfileActivity : AppCompatActivity() {
                 name.isEmpty() -> {
                     binding.nameEditTextLayout.error = "Masukkan nama"
                 }
-                editProfilViewModel.infoUser.value!!.data.name == name -> {
-                    binding.nameEditTextLayout.error = "Tidak ada perubahan nama"
-                }
+//                editProfilViewModel.infoUser.value!!.data.name == name -> {
+//                    binding.nameEditTextLayout.error = "Tidak ada perubahan nama"
+//                }
                 profession.isEmpty() -> {
                     binding.professionEditTextLayout.error = "Masukkan profesi"
                 }
-                editProfilViewModel.infoUser.value!!.data.profession == profession -> {
-                    binding.professionEditTextLayout.error = "Tidak ada perubahan profesi"
-                }
+//                editProfilViewModel.infoUser.value!!.data.profession == profession -> {
+//                    binding.professionEditTextLayout.error = "Tidak ada perubahan profesi"
+//                }
                 gender.isEmpty() -> {
                     binding.genderEditTextLayout.error = "Masukkan gender"
                 }
-                editProfilViewModel.infoUser.value!!.data.gender == gender -> {
-                    binding.genderEditTextLayout.error = "Tidak ada perubahan jenis kelamin"
-                }
+//                editProfilViewModel.infoUser.value!!.data.gender == gender -> {
+//                    binding.genderEditTextLayout.error = "Tidak ada perubahan jenis kelamin"
+//                }
                 phone.isEmpty() -> {
                     binding.phoneEditTextLayout.error = "Masukkan phone"
                 }
-                editProfilViewModel.infoUser.value!!.data.phone == phone -> {
-                    binding.phoneEditTextLayout.error = "Tidak ada perubahan phone"
-                }
+//                editProfilViewModel.infoUser.value!!.data.phone == phone -> {
+//                    binding.phoneEditTextLayout.error = "Tidak ada perubahan phone"
+//                }
                 email.isEmpty() -> {
                     binding.emailEditTextLayout.error = "Masukkan email"
                 }
                 !Patterns.EMAIL_ADDRESS.matcher(email).matches() -> {
                     binding.emailEditTextLayout.error = "Email Tidak Valid"
                 }
-                editProfilViewModel.infoUser.value!!.data.email == email -> {
-                    binding.emailEditTextLayout.error = "Tidak ada perubahan email"
-                }
+//                editProfilViewModel.infoUser.value!!.data.email == email -> {
+//                    binding.emailEditTextLayout.error = "Tidak ada perubahan email"
+//                }
                 password.isEmpty() -> {
                     binding.passwordEditTextLayout.error = "Masukkan password"
                 }

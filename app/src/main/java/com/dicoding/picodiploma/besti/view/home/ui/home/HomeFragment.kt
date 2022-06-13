@@ -42,14 +42,14 @@ class HomeFragment : Fragment() {
 
         homeViewModel.getInfoResponse().observe(viewLifecycleOwner, Observer<InfoResponse> {
             if (it != null) {
-                Toast.makeText(context, it.status, Toast.LENGTH_LONG).show()
+//                Toast.makeText(context, it.status, Toast.LENGTH_SHORT).show()
                 val tvName: TextView = requireActivity().findViewById(R.id.tv_username)
                 val tvPhone: TextView = requireActivity().findViewById(R.id.tv_description)
                 tvName.text = "Nama : " + it.data.name
                 tvPhone.text = "Phone : " + it.data.phone
             }
             if (it == null) {
-                Toast.makeText(context, "Failed to create User", Toast.LENGTH_LONG).show()
+//                Toast.makeText(context, "Failed to create User", Toast.LENGTH_SHORT).show()
             }
         })
 
@@ -107,7 +107,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun showSelectedHero(berita: Berita) {
-        Toast.makeText(requireActivity(), "Kamu memilih " + berita.name, Toast.LENGTH_SHORT).show()
+//        Toast.makeText(requireActivity(), "Kamu memilih " + berita.name, Toast.LENGTH_SHORT).show()
 
     }
 }

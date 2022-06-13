@@ -43,7 +43,7 @@ class ProfileFragment : Fragment() {
 
         profileViewModel.getInfoResponse().observe(viewLifecycleOwner, Observer<InfoResponse> {
             if (it != null) {
-                Toast.makeText(context, it.status, Toast.LENGTH_LONG).show()
+//                Toast.makeText(context, it.status, Toast.LENGTH_LONG).show()
                 val tvName: TextView = requireActivity().findViewById(R.id.username)
                 val tvPhone: TextView = requireActivity().findViewById(R.id.phone)
                 val tvEmail: TextView = requireActivity().findViewById(R.id.email)
@@ -52,7 +52,7 @@ class ProfileFragment : Fragment() {
                 tvEmail.text = it.data.email
             }
             if (it == null) {
-                Toast.makeText(context, "Failed to create User", Toast.LENGTH_LONG).show()
+//                Toast.makeText(context, "Failed to create User", Toast.LENGTH_LONG).show()
             }
         })
 

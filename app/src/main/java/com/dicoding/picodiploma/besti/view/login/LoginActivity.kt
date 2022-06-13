@@ -46,11 +46,11 @@ class LoginActivity : AppCompatActivity() {
 
         loginViewModel.getLoginResponse().observe(this, Observer<LoginResponse> {
             if (it != null) {
-                Toast.makeText(
-                    applicationContext,
-                    "kamu telah login",
-                    Toast.LENGTH_LONG
-                ).show()
+//                Toast.makeText(
+//                    applicationContext,
+//                    "kamu telah login",
+//                    Toast.LENGTH_LONG
+//                ).show()
                 val tokenUser = (it.data.token)
 
                 preferenceHelper.put(PREF_TOKEN, tokenUser)
@@ -58,8 +58,8 @@ class LoginActivity : AppCompatActivity() {
                 finish()
             }
             if (it == null) {
-                Toast.makeText(applicationContext, "Password atau Email Salah", Toast.LENGTH_LONG)
-                    .show()
+//                Toast.makeText(applicationContext, "Password atau Email Salah", Toast.LENGTH_LONG)
+//                    .show()
             }
         })
 

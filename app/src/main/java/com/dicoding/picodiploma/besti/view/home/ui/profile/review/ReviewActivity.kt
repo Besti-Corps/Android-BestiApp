@@ -66,10 +66,10 @@ class ReviewActivity : AppCompatActivity() {
 
         reviewViewModel.postReview().observe(this, Observer<PostReviewResponse> {
             if (it != null) {
-                Toast.makeText(applicationContext, it.status, Toast.LENGTH_LONG).show()
+//                Toast.makeText(applicationContext, it.status, Toast.LENGTH_LONG).show()
             }
             if(it == null){
-                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG).show()
+//                Toast.makeText(applicationContext, "Failed to create User", Toast.LENGTH_LONG).show()
             }
         })
 

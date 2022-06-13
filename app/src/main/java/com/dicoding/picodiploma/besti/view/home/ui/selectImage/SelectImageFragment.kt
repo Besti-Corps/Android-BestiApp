@@ -108,7 +108,7 @@ class SelectImageFragment : Fragment() {
                     preferenceHelper.put(ACCURACY, accuracy[0].accuracy.toString())
                     preferenceHelper.put(TYPE, type)
                     preferenceHelper.put(LABEL, label[0].label)
-                    Toast.makeText(activity, "ACCURACY" + preferenceHelper.getString(ACCURACY), Toast.LENGTH_SHORT).show()
+//                    Toast.makeText(activity, "ACCURACY" + preferenceHelper.getString(ACCURACY), Toast.LENGTH_SHORT).show()
                     val intent = Intent(activity, ResultActivity::class.java)
                     intent.putExtra("BITMAP", filePath)
                     startActivity(intent)
@@ -116,7 +116,7 @@ class SelectImageFragment : Fragment() {
             })
 
         } else {
-            Toast.makeText(activity, "Silakan masukkan berkas gambar terlebih dahulu.", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(activity, "Silakan masukkan berkas gambar terlebih dahulu.", Toast.LENGTH_SHORT).show()
         }
     }
 
