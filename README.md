@@ -1,9 +1,16 @@
 ## Mobile Development Documentation
 The source code of Android app of BesTi using Kotlin in order to complete Bangkit Capstone Project.
 
-![image](https://user-images.githubusercontent.com/89836228/173280017-06d70b08-d199-4896-b678-1a4976771f2a.png)![image](https://user-images.githubusercontent.com/89836228/173279939-820a8aae-166b-46e7-bb09-a6585a232172.png)![image](https://user-images.githubusercontent.com/89836228/173279983-0165d172-10a4-4a3e-ab69-9481f8982b77.png)
 <img src="https://user-images.githubusercontent.com/89836228/173280017-06d70b08-d199-4896-b678-1a4976771f2a.png"
-     alt="Submission1 1"
+     alt="Home"
+     style="float: left; margin-right: 10px;"
+     width="200" /> 
+<img src="https://user-images.githubusercontent.com/89836228/173279939-820a8aae-166b-46e7-bb09-a6585a232172.png"
+     alt="Camera"
+     style="float: left; margin-right: 10px;"
+     width="200" /> 
+<img src="https://user-images.githubusercontent.com/89836228/173279983-0165d172-10a4-4a3e-ab69-9481f8982b77.png"
+     alt="Result"
      style="float: left; margin-right: 10px;"
      width="200" /> 
 
